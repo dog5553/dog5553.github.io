@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">  
+    <!-- *사용정보가 메모리에 남지 않게 지정한다. 모든 캐시가 남지 않도록 -->
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="대한민국 외교부 웹앱">
+    <meta name="keyboards" content="대한민국 외교부">
+    <meta name="auther" content="Ahn">
+    <meta name="description" content="대한민국 외교의 힘, 대한외교부">
+    <title>대한민국 외교부 웹사이트</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script></script>
+    <link rel="stylesheet" href="https://github.com/necolas/normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="font.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
+
+    <style>
+    .wrap{width: 100%;height: 100%;}
+    .hd{width: 100%;height: 50%;
+         background: darkblue;
+         background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #7db9e8 100%); /* FF3.6-15 */
+         background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+         background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+         background-repeat: no-repeat;}
+    .logo{display: block;
+          width: 100px;height: 20px;
+          float: left; margin-left: 10px; margin-top: 10px;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center center;}
+    .topbtn{float: right; margin-top: 10px; margin-right: 10px;}
+    .topbtn li{ float: left;}
+    .topbtn li label{
+      display: block; width: 25px; height: 25px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      text-indent: -9999px;}
+    .topbtn li.search label{
+      background-image: url("./ico/inspect1.png"); background-size: cover; margin-right: 5px;}
+    .topbtn li.menu label{
+      background-image: url("./ico/setup1.png"); background-size: cover;}      
+    .ckitem{display: none;}
+    #findnav{width: 100%;height: 100vh;background-color: #333;
+      transition: 0.4s;
+      position: fixed;
+      right: -110%;
+      top: 0;
+      z-index: 99;}
+    #ck1:checked ~ #findnav{right: 0;}
+    .close1{width: 25px; height: 2px; background-size: cover;}
+    #gnb{
+      position: fixed; 
+      left: -110%;
+      top: 0;
+      z-index: 99; 
+      padding-top: 15px;
+    width: 100%;height: 100vh;background-color: #333;
+    transition: 0.4s;} 
+    #ck2:checked ~ #gnb{left: 0;} 
+    .frm1{clear: both; padding-top: 2em;width: 250px;margin: 0 auto;}
+    .frm1 input{display: block; float: left;margin-left: 0;}
+    .indata{width: 200px; line-height: 32px;
+           margin: 0 auto; border: 1px solid #ccc;
+           text-indent: 1em;background: #ccc;color: #888;
+           left: 100px;}
+    .frmbtn{width: 30px; line-height: 34px; background-color:#ccc;
+            background-image: url(./ico/inspect1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-indent: -9999px;
+            margin-left: 20px;
+            border-left: 2px solid #fff;
+           }
+    
+    .hashtit{clear: both; text-align: center;line-height: 4;color: #999;margin-top: 40px;}
+    .hash{clear: both;padding-top: 20px;}
+    .hash li{line-height: 2.4;padding-left: 20px;padding-top: 30px;}
+    .hash li a{color: #ccc;}
+    #findnav .close{float: right; margin-top: 20px; margin-right: 20px;}
+    #gnb ul.nav{margin-top: 20px;}
+    #gnb li{margin-top: 10px;clear: both; line-height: 2; padding-left: 25px;}
+   
+    #gnb li a{display: block; color: #fff;position: relative;}
+    .sub{top:20px; width: 100%;height: 0; overflow: hidden;transition: 0.4s;}
+    .sub li{color: #fff;}
+    .sub.on{height: 125px;}
+    #gnb li a.dp1:after{
+      content: "▽";position: absolute; right: 50px; top: 5px;}
+    #gnb li a.dp1.on:after{content: "△";}
+    #gnb:before{content: "MENU"; display: block; clear: both;
+                width: 100%; line-height: 80px; font-size: 2em;color: #fff;
+                text-align: center;border-bottom: 3px solid #fff; }
+    #gnb .close1{position: absolute; right: 20px; top: 20px;}
+    #gnb .close1 img{ width: 25px; height: 25px;}
+    #findnav .close2{position: absolute; right: 20px; top: 20px;}
+    #findnav .close2 img{ width: 25px; height: 25px;}
+
+    .ft{clear: both; height: 120px; background: #333; color: #fff;
+        font-size: 0.5em; text-align: center; line-height: 1.6em;
+        padding-bottom:15px;font-weight: 200; position: absolute;
+      bottom: 0; left: 0; width: 100%; padding-top: 10px;}
+    .ftwrap{width: 280px; margin: 0 auto;}
+ </style>
+ 
+<style>
+  body,html{width: 100%; height: 100%; overflow: hidden;}
+    .vs{position: absolute; width: 90%; left: 5%; top: 50px;
+        max-height: 55%; overflow: hidden; z-index: 1;}
+    .imgbox{width: 500%;height: auto; margin-top: 30px; }
+    .imgbox li{width: 20%; height: auto; float: left;}
+    .imgbox li a{display: block; width: 100%;}
+    .imgbox li img{display: block; width: 100%; height: 250px;}
+    .btnbox{position: absolute;bottom: 10px; width: 100px;left:calc(50% - 50px);}
+    .btnbox li{ width: 20px; height: 20px; float: left;  }
+    .btnbox li button{display: block; width: 10px; height: 10px; border-radius: 6px;
+    background: #ccc;float: left; margin-right: 10px;}
+    .btnbox li.on button{background: skyblue;}
+
+    .shortcut{width: 199px; margin: 30px auto;border-bottom: 1px solid #ccc; border-right: 1px solid #ccc;height: 129px;}
+    .shortcut li{float: left;width: 65px; border-left: 1px solid #ccc; border-top: 1px solid #ccc; height: 64px;}
+    .shortcut li a{display: block;}
+    .shortcut li span{display: block;}
+    .shortcut li span[class*=ico]{background-repeat: no-repeat;background-image: url("./ico/split1.png"); width: 65px; height: 42px;}
+    .shortcut li span.ico1{background-position: 7px 0px; }
+    .shortcut li span.ico2{background-position: -100px -48px;}
+    .shortcut li span.ico3{background-position: -156px -0px;}
+    .shortcut li span.ico4{background-position: -46px -98px;}
+    .shortcut li span.ico5{background-position: -100px -99px;}
+    .shortcut li span.ico6{background-position: -100px -0px;}
+    .shortcut li span.txt{color: #000; font-size: 0.85em; text-align: center;}
+
+</style>
+    <script>
+      // menu를 누르면 sub이 나타나고 이 때 화살표 모양은 up이었다가 클릭하면 down 모양으로 바뀐다.
+    $(document).ready(function(){
+      $("#gnb a.dp1").click(function(){
+        $(".sub").removeClass("on");
+        $(this).next(".sub").addClass("on");
+        $("#gnb a.dp1").removeClass("on");
+        $(this).addClass("on");
+      });
+      var wd = parseInt($(".vs").width());
+      $(".btnbox li").click(function(){
+        var idx = $(this).index();
+        $(".imgbox").not(":animated").animate({"margin-left":wd*idx*-1+"px"},600);
+        $(".btnbox li").removeClass("on");
+        $(this).addClass("on");
+    });
+
+    });
+    </script>
+</head>
+<body>
+  <div class="wrap">
+      <header class="hd">
+          <a href="index.html" class="logo" title="logo"><img src="./img/logo1.png" alt="logo"></a>
+          <input type="checkbox" class="ckitem" id="ck1">
+          <input type="checkbox" class="ckitem" id="ck2">
+          <nav class="topbtn">
+            <ul>
+              <li class="search" ><label for="ck1"></label></li>
+              <li class="menu"><label for="ck2"></label></li>
+            </ul>
+          </nav>
+      <nav id="findnav">
+        <form action="" class="frm1">
+          <input type="text" id="keyword" class="indata" placeholder="검색어를 입력하시오">
+          <input type="submit" value="검색" class="frmbtn">
+        </form>
+      <p class="hashtit">아래의 자주 사용하는 메뉴 링크를 이용하세요</p>
+      <ul class="hash">
+        <li class="item1"><a href="sub1.html">외교정책</a></li>
+        <li class="item2"><a href="sub2.html">국민참여대화의장</a></li>
+        <li class="item3"><a href="sub3.html">민원접수</a></li>
+        <li class="item4"><a href="sub4.html">북한핵문제</a></li>
+      </ul>
+      <label for="ck1" class="close2"><img src="./ico/close1.png" alt=""></label>
+      </nav>  
+      <nav id="gnb">
+        <ul class="nav">
+        <li class="item1">
+          <a class="dp1">외교정책</a>
+            <ul class="sub">
+              <li class="it1">외교정책조약·국제법</li>
+              <li class="it2">조약체결현황</li>
+              <li class="it3">최근발효조약</li>
+              <li class="it4">영토·해양이슈</li>
+              <li class="it5">개발협력</li>
+            </ul>
+        </li>
+        <li class="item2"><a class="dp1">영사·국가 </a>
+          <ul class="sub">
+            <li class="it1">여행·해외체류정보 </li>
+            <li class="it2">영사관련서식</li>
+            <li class="it3">여권</li>
+            <li class="it4">재외국민등록</li>
+            <li class="it5">국가/지역 검색</li>
+          </ul>
+        </li>
+        <li class="item3"><a class="dp1">국제기구·지역협력체</a>
+          <ul class="sub">
+            <li class="it1">UN</li>
+            <li class="it2">OECD</li>
+            <li class="it3">WTO</li>
+            <li class="it4">IAEA</li>
+            <li class="it5">APEC</li>
+            <li class="it5">한-ASEAN</li>
+            <li class="it5">ASEAN+3</li>
+
+          </ul>
+          <li class="item4"><a class="dp1">안보</a>
+            <ul class="sub">
+              <li class="it1">해외취업지원</li>
+              <li class="it2">박람회·전시회정보</li>
+              <li class="it3">해외입찰정보</li>
+              <li class="it4">인권외교활동</li>
+              <li class="it5">북한인권문제</li>
+              <li class="it5">국제인권관련기구</li>
+              <li class="it5">국제인권규범</li>
+            </ul>
+          </li>
+          <li class="item5"><a class="dp1">환경</a>
+            <ul class="sub">
+              <li class="it1">기후변화·환경</li>
+              <li class="it2">에너지·자원협력</li>
+              <li class="it4">남극</li>
+              <li class="it5">북극</li>
+            </ul>
+          </li>
+        </li>
+      </ul>
+        <label for="ck2" class="close1"><img src="./ico/close1.png" alt="닫기"></label>
+        </nav>
+      </header>
+      <figure class="vs">
+        <ul class="imgbox">
+          <li class="item1"><a href="">
+            <img src="./img/img1.jpg" alt="대통령"></a></li>
+          <li class="item2"><a href="">
+            <img src="./img/img2.jpg" alt="대통령"></a></li>
+          <li class="item3"><a href="">
+            <img src="./img/img3.jpg" alt="협력"></a></li>
+          <li class="item4"><a href="">
+            <img src="./img/img4.jpg" alt="협력"></a></li>
+          <li class="item5"><a href=""><img src="./img/main2_1_.jpg" alt=""></a></li>
+        </ul>
+        <ul class="btnbox">
+          <li class="item1 on"><button></button></li>
+          <li class="item2"><button></button></li>
+          <li class="item3"><button></button></li>
+          <li class="item4"><button></button></li>
+          <li class="item5"><button></button></li>
+        </ul>
+      </figure>
+    
+      <nav class="shortcut">
+          <ul>
+              <li class="item1">
+                  <a href="list.html">
+                  <span class="ico1" rel="external"></span>
+                  <span class="txt">목록보기</span>
+                </a>
+            </li>
+              <li class="item2">
+                  <a href="search.html" rel="external">
+                      <span class="ico2"></span>
+                      <span class="txt">검색</span>
+                    </a>
+                </li>
+              <li class="item3">
+                  <a href="tel:042-478-2111" rel="external">
+                      <span class="ico3"><img src="" alt=""></span>
+                      <span class="txt">전화상담</span>
+                    </a>
+                </li>
+              <li class="item4">
+                  <a href="sns:010-111-1111">
+                      <span class="ico4" rel="external"></span>
+                      <span class="txt">문자상담</span>
+                </a>
+            </li>
+              <li class="item5">
+                  <a href="mailto:ksb450424@naver.com">
+                      <span class="ico5" rel="external"></span>
+                      <span class="txt">이메일</span>
+                    </a>
+                </li>
+              <li class="item6">
+                  <a href="memo.html">
+                      <span class="ico6" rel="external"></span>
+                      <span class="txt">글쓰기</span>
+                    </a>
+                </li>
+          </ul>
+      </nav>
+     
+      <footer class="ft">
+        <div class="ftwrap">
+          <br>
+          <p class="coyright">주소 : 03172 서울특별시 종로구 사직로8길 60 전화번호 : 02-2100-2114(주) 7000,7100(야) 팩스 : 02-2100-7999본 홈페이지의 모든 권리는 외교부에 귀속됩니다.
+          </p>
+          <br>
+          <address class="copy">Copyright © 2012 MOFA. All Rights Reserved</address>
+  
+     
+         </div>
+        
+        </footer>
+   </div>
+</body>
+</html>
