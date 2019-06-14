@@ -1,0 +1,110 @@
+ 
+@charset "utf-8";
+
+body,html{width: 100%; height: 100%; overflow: hidden;}
+  .vs{position: absolute; width: 90%; left: 5%; top: 50px;
+      max-height: 55%; overflow: hidden; z-index: 1;}
+  .imgbox{width: 500%;height: auto; margin-top: 30px; }
+  .imgbox li{width: 20%; height: auto; float: left;}
+  .imgbox li a{display: block; width: 100%;}
+  .imgbox li img{display: block; width: 100%; height: 250px;}
+  .btnbox{position: absolute;bottom: 10px; width: 100px;left:calc(50% - 50px);}
+  .btnbox li{ width: 20px; height: 20px; float: left;  }
+  .btnbox li button{display: block; width: 10px; height: 10px; border-radius: 6px;
+  background: #ccc;float: left; margin-right: 10px;}
+  .btnbox li.on button{background: skyblue;}
+
+  .shortcut{width: 199px; margin: 30px auto;border-bottom: 1px solid #ccc; border-right: 1px solid #ccc;height: 129px;}
+  .shortcut li{float: left;width: 65px; border-left: 1px solid #ccc; border-top: 1px solid #ccc; height: 64px;}
+  .shortcut li a{display: block;}
+  .shortcut li span{display: block;}
+  .shortcut li span[class*=ico]{background-repeat: no-repeat;background-image: url("./ico/split1.png"); width: 65px; height: 42px;font-size: 0.85em;}
+  .shortcut li span.ico1{background-position: 7px 0px; }
+  .shortcut li span.ico2{background-position: -100px -48px;}
+  .shortcut li span.ico3{background-position: -156px -0px;}
+  .shortcut li span.ico4{background-position: -46px -98px;}
+  .shortcut li span.ico5{background-position: -100px -99px;}
+  .shortcut li span.ico6{background-position: -100px -0px;}
+  .shortcut li span.txt{color: #000; font-size: 0.85em; text-align: center;}
+  .wrap{width: 100%;height: 100%;}
+  .hd{width: 100%;height: 50%;
+       background: darkblue;
+       background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #7db9e8 100%); /* FF3.6-15 */
+       background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+       background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+       background-repeat: no-repeat;}
+  .logo{display: block;
+        width: 100px;height: 20px;
+        float: left; margin-left: 10px; margin-top: 10px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;}
+  .topbtn{float: right; margin-top: 10px; margin-right: 10px;}
+  .topbtn li{ float: left;}
+  .topbtn li label{
+    display: block; width: 25px; height: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -9999px;}
+  .topbtn li.search label{
+    background-image: url("./ico/inspect1.png"); background-size: cover; margin-right: 5px;}
+  .topbtn li.menu label{
+    background-image: url("./ico/setup1.png"); background-size: cover;}      
+  .ckitem{display: none;}
+  #findnav{width: 100%;height: 100vh;background-color: #333;
+    transition: 0.4s;
+    position: fixed;
+    right: -110%;
+    top: 0;
+    z-index: 99;}
+  #ck1:checked ~ #findnav{right: 0;}
+  .close1{width: 25px; height: 2px; background-size: cover;}
+  #gnb{
+    position: fixed; 
+    left: -110%;
+    top: 0;
+    z-index: 99; 
+    padding-top: 15px;
+  width: 100%;height: 100vh;background-color: #333;
+  transition: 0.4s;} 
+  #ck2:checked ~ #gnb{left: 0;} 
+  .frm1{clear: both; padding-top: 3em;width: 233px;margin: 0 auto;height: auto;}
+  .frm1 input{display: block; float: left;margin-left: 0;}
+  .indata{width: 200px; line-height: 32px;
+         margin: 0 auto; border: 1px solid #ccc;
+         text-indent: 1em;background: #ccc;color: #888;
+         left: 100px;}
+  .frmbtn{width: 30px; line-height: 34px; background-color:#ccc;
+          background-image: url(./ico/inspect1.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+          text-indent: -9999px;
+          
+          border-left: 2px solid #fff;
+         }
+  
+  .hashtit{clear: both; text-align: center;
+  line-height: 40px;color: #999;margin-top: 60px;font-size: 14px; border-bottom: 2px solid #fff;}
+  .hash{clear: both;padding-top: 20px;}
+  .hash li{line-height: 2.4;padding-left: 20px;padding-top: 30px;}
+  .hash li a{color: #ccc;}
+  #findnav .close{float: right; margin-top: 20px; margin-right: 20px;}
+  #gnb ul.nav{margin-top: 20px;}
+  #gnb li{margin-top: 10px;clear: both; line-height: 2; padding-left: 25px;}
+ 
+  #gnb li a{display: block; color: #fff;position: relative;}
+  .sub{top:20px; width: 100%;height: 0; overflow: hidden;transition: 0.4s;}
+  .sub li{color: #fff;}
+  .sub.on{height: 125px;}
+  #gnb li a.dp1:after{
+    content: "▽";position: absolute; right: 50px; top: 5px;}
+  #gnb li a.dp1.on:after{content: "△";}
+  #gnb:before{content: "MENU"; display: block; clear: both;
+              width: 100%; line-height: 80px; font-size: 2em;color: #fff;
+              text-align: center;border-bottom: 3px solid #fff; }
+  #gnb .close1{position: absolute; right: 20px; top: 20px;}
+  #gnb .close1 img{ width: 25px; height: 25px;}
+  #findnav .close2{position: absolute; right: 20px; top: 20px;}
+  #findnav .close2 img{ width: 25px; height: 25px;}

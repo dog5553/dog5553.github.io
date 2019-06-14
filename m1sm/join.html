@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">  
+    <!-- *사용정보가 메모리에 남지 않게 지정한다. 모든 캐시가 남지 않도록 -->
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="대한민국 외교부 웹앱">
+    <meta name="keyboards" content="대한민국 외교부">
+    <meta name="auther" content="Ahn">
+    <meta name="description" content="대한민국 외교의 힘, 대한외교부">
+    <title>대한민국 외교부 웹사이트</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script></script>
+    <link rel="stylesheet" href="https://github.com/necolas/normalize.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
+<script src="main.js"></script>
+    <style>
+        body,html{width: 100%;height: 100%; overflow: auto;}
+        .hd{height: 60px; position: fixed;z-index: 80;}
+        .ft {position:fixed;bottom:0;left: 0;z-index: 80;}
+        .pagetitle{text-align: center; line-height: 3;padding-top: 50px;} 
+      
+        .frm2{clear: both;padding-bottom: 150px;overflow: scroll;}
+        .frm2 fieldset{border: 0;}
+        .infrm{display: block; width: 280px; clear: both; margin: 15px auto;line-height: 2;font-size: 0.8em; color: #222; border: 1px solid #ccc;border-radius: 10px;}
+        .frm2 .infrm{color: #222; text-indent: 1em; }
+        .btnfrm{display: block; float: left;width: 100px; line-height: 32px; text-align: center; margin: 10px;background: #666; color: #fff; }
+        .frmbtnframe{width: 240px;margin: 20px auto;}
+    </style>
+</head>
+<body>
+  <div class="wrap">
+      <header class="hd">
+        
+          <a href="index.html" class="logo" title="logo"><img src="./img/logo1.png" alt="logo"></a>
+          <input type="checkbox" class="ckitem" id="ck1">
+          <input type="checkbox" class="ckitem" id="ck2">
+          <nav class="topbtn">
+            <ul>
+              <li class="search" ><label for="ck1"></label></li>
+              <li class="menu"><label for="ck2"></label></li>
+            </ul>
+          </nav>
+      <nav id="findnav">
+        <form action="" class="frm1">
+          <input type="text" id="keyword" class="indata" placeholder="검색어를 입력하시오">
+          <input type="submit" value="검색" class="frmbtn">
+        </form>
+      <p class="hashtit">아래의 자주 사용하는 메뉴 링크를 이용하세요</p>
+      <ul class="hash">
+        <li class="item1"><a href="sub1.html">외교정책</a></li>
+        <li class="item2"><a href="sub2.html">국민참여대화의장</a></li>
+        <li class="item3"><a href="sub3.html">민원접수</a></li>
+        <li class="item4"><a href="sub4.html">북한핵문제</a></li>
+      </ul>
+      <label for="ck1" class="close2"><img src="./ico/close1.png" alt=""></label>
+      </nav>  
+      <nav id="gnb">
+        <ul class="nav">
+        <li class="item1">
+          <a class="dp1">외교정책</a>
+            <ul class="sub">
+              <li class="it1">외교정책조약·국제법</li>
+              <li class="it2">조약체결현황</li>
+              <li class="it3">최근발효조약</li>
+              <li class="it4">영토·해양이슈</li>
+              <li class="it5">개발협력</li>
+            </ul>
+        </li>
+        <li class="item2"><a class="dp1">영사·국가 </a>
+          <ul class="sub">
+            <li class="it1">여행·해외체류정보 </li>
+            <li class="it2">영사관련서식</li>
+            <li class="it3">여권</li>
+            <li class="it4">재외국민등록</li>
+            <li class="it5">국가/지역 검색</li>
+          </ul>
+        </li>
+        <li class="item3"><a class="dp1">국제기구·지역협력체</a>
+          <ul class="sub">
+            <li class="it1">UN</li>
+            <li class="it2">OECD</li>
+            <li class="it3">WTO</li>
+            <li class="it4">IAEA</li>
+            <li class="it5">APEC</li>
+            <li class="it5">한-ASEAN</li>
+            <li class="it5">ASEAN+3</li>
+
+          </ul>
+          <li class="item4"><a class="dp1">안보</a>
+            <ul class="sub">
+              <li class="it1">해외취업지원</li>
+              <li class="it2">박람회·전시회정보</li>
+              <li class="it3">해외입찰정보</li>
+              <li class="it4">인권외교활동</li>
+              <li class="it5">북한인권문제</li>
+              <li class="it5">국제인권관련기구</li>
+              <li class="it5">국제인권규범</li>
+            </ul>
+          </li>
+          <li class="item5"><a class="dp1">환경</a>
+            <ul class="sub">
+              <li class="it1">기후변화·환경</li>
+              <li class="it2">에너지·자원협력</li>
+              <li class="it4">남극</li>
+              <li class="it5">북극</li>
+            </ul>
+          </li>
+        </li>
+      </ul>
+        <label for="ck2" class="close1"><img src="./ico/close1.png" alt="닫기"></label>
+        </nav>
+      </header>
+      <h2 class="pagetitle">회원가입</h2>
+        <form action="" class="frm2">
+            <fieldset>
+                <input type="text" id="mid" placeholder="아이디 입력" class="infrm" name="mid">
+                <input type="password" id="mpw" placeholder="암호 입력" class="infrm" name="mpw">
+                <input type="password" id="mpw2" placeholder="암호 확인" class="infrm"  name="mpw2">
+                <input type="text" id="mname" placeholder="이름 입력" class="infrm" name="mname">
+                <input type="email" id="memail" placeholder="이메일 입력" class="infrm" name="memail" >
+                <input type="file" id="mpic" placeholder="사진 첨부" class="infrm" name="mpic" >
+                <input type="date" id="mbirth" placeholder="생년 월일" class="infrm" name="mbirth" >
+            </fieldset>
+            <fieldset class="frmbtnframe">
+                <input type="submit" class="btnfrm" value="회원가입">
+                <input type="reset" class="btnfrm" value="취소">
+
+            </fieldset>
+        </form>
+      <figure class="vs">
+        
+      </figure>
+    
+      
+     
+      <footer class="ft">
+        <div class="ftwrap">
+          <br>
+          <p class="coyright">주소 : 03172 서울특별시 종로구 사직로8길 60 
+            <br>
+             전화번호 : 02-2100-2114(주) 7000,7100(야) 팩스 : 02-2100-7999본 홈페이지의 모든 권리는 외교부에 귀속됩니다.
+          </p>
+          <br>
+          <address class="copy">Copyright © 2012 MOFA. All Rights Reserved</address>
+  
+     
+         </div>
+        
+        </footer>
+   </div>
+</body>
+</html>

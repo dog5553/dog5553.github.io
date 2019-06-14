@@ -1,0 +1,18 @@
+@charset "uft-8";
+@font-face{
+    font-family: 'Noto Snas KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(./fonts.NotoSansKR-Thin.woff2) format('woff2'),
+         url(./fonts.NotoSansKR-Thin.woff) format('woff'),
+         url(./fonts.NotoSansKR-Thin.otf) format('opentype'); 
+}
+@font-face{
+    font-family: 'Noto Snas KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(./fonts.NotoSansKR-Thin.woff2) format('woff2'),
+         url(./fonts.NotoSansKR-Thin.woff) format('woff'),
+         url(./fonts.NotoSansKR-Thin.otf) format('opentype'); 
+}
+/* 인터넷 연결이 안되도 사용가능 하지만 용량은 크다. */
