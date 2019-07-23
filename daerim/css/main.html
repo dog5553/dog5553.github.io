@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://www.daelimmuseum.org/dmuseum/onViewTab1.do -->
+<html lang="ko" class="js" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>
+
+전시소개 - 현재 전시 - EXHIBITION : D 뮤지엄
+
+
+</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="대림미술관, D MUSEUM, 구슬모아당구장, 전시 소개, 작가 소개, 오시는길, D 멤버십, 모바일투어, 온라인회원가입, DPASS, GOOD NIGTHT">
+<meta name="description" content="In Everyday Life, 일상이 예술이 되는 미술관, 대림미술관, D MUSEUM, 구슬모아당구장에서 진행하는 전시와 행사 이벤트를 안내해 드립니다. ">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<link rel="shortcut icon" href="http://www.daelimmuseum.org/front/images/common/icon_favicon.ico">
+<link rel="stylesheet" type="text/css" href="./main_files/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="./main_files/common.css">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/front/js/html5.js"></script>
+<![endif]-->
+<script async="" src="./main_files/analytics.js.다운로드"></script><script type="text/javascript" async="" src="./main_files/analytics.js(1).다운로드"></script><script type="text/javascript" src="./main_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./main_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./main_files/validate.js.다운로드"></script>
+<script type="text/javascript" src="./main_files/util.js.다운로드"></script>
+
+
+<script>
+	var sslPages = [
+	                "member", "reserveSpecial", "reserveEdu", "reserveQuerencia"
+	                ];
+
+   	var url = location.href;
+
+   	if(url.indexOf("http://dev.") === -1 ){
+   		var isChangedSubdomain = false;
+
+   		if ( url.indexOf("http://daelimmuseum") > -1  ) {
+   			url = url.replace("http://daelimmuseum" , "http://www.daelimmuseum");
+   			isChangedSubdomain = true;
+   		}
+
+   		var isSslPage = false;
+   		$(sslPages).each(function(idx, el){
+   			if(url.indexOf(el) > -1) {
+   				isSslPage = true;
+   				return false;
+   			}
+   		});
+
+   		if (isSslPage) {
+   			if(url.indexOf("http://") > -1) {
+   				url = url.replace("http://" , "https://");
+   				location.href = url;
+   			}
+   		} else {
+   			if(url.indexOf("https://") > -1) {
+   				url = url.replace("https://" , "http://");
+   				location.href = url;
+   			}
+   		}
+
+   		if (isChangedSubdomain === true) {
+   			location.href = url;
+   		}
+   	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./main_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-48000917-2');
+</script>
+
+<link rel="stylesheet" type="text/css" href="./main_files/exhibition.css">
+
+<!-- 자바 스크립트 작성부 -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+	var userAgent = navigator.userAgent.toLowerCase();
+			// 모바일 홈페이지 바로가기 링크 생성
+			if(userAgent.match('iphone')) {    //아이폰
+				location.href = "http://www.daelimmuseum.org/mobile/dmuseum/onViewTab1.do"
+			} else if(userAgent.match('android')) {    //안드로이드 기기
+				location.href = "http://www.daelimmuseum.org/mobile/dmuseum/onViewTab1.do"
+			} else {    //그 외
+				//location.href = "http://www.daelimmuseum.org/index.do"
+			}
+});
+
+//method 탭이동   
+//@param pageNo
+//@returns {object}
+function goTabs(val) {
+	var actionUrl = "/dmuseum/onViewTab" + val + ".do";
+	jQuery("#exhibitionForm").attr("action", actionUrl);
+	jQuery("#clDspl").val("A");
+	jQuery("#exhibitionForm").submit();
+}
+
+
+//method 다음전시 상세 페이지 이동
+//@param pageNo
+//@returns {object}
+function goNextExhibView(val) {
+	var actionUrl = "/dmuseum/nextView.do";
+	jQuery('#exhibitionForm').attr("action", actionUrl);
+	jQuery('#NEXT_NO_DSPL_ASBL_SEQ').val(val);
+	jQuery('#exhibitionForm').submit();
+}
+
+
+//method D Library 상세 페이지 이동
+//@param gbn, val
+//@returns {object}
+function goLibraryView(gbn, val) {
+	jQuery("#no_ntc_plte_seq").val(val);
+	if ( gbn == '1' ) {	//D Library 내 moment 이동
+		jQuery("#exhibitionForm").attr("action", "/library/momentView.do");
+	} else if ( gbn == '2' ) {	//D Library 내 episode 이동
+		jQuery("#exhibitionForm").attr("action", "/library/episodeView.do");
+	}
+	jQuery("#exhibitionForm").submit();
+}
+
+
+</script>
+<!-- //자바 스크립트 작성부 -->
+</head>
+
+<body style="">
+<div id="skip_navi"><strong>건너뛰기 메뉴</strong><ul><li><a href="http://www.daelimmuseum.org/dmuseum/onViewTab1.do#contents">본문가기</a></li></ul></div>
+<div class="loading none ui_loading"><span><img src="./main_files/loading.gif" alt="LOADING">LOADING</span></div>
+
+<div id="wrap" class="dmuseum">
+	<!-- gnb -->
+	
+
+<script type="text/javascript" src="./main_files/jquery.popupWindow.js.다운로드" charset="utf-8"></script>
+<script type="text/javascript">
+
+var browser = { 
+	ua : navigator.userAgent.toLowerCase(),
+	init : function() {
+		this.ie = this.ua.indexOf("msie") != -1; 
+		this.ie_sv1 = this.ua.indexOf("sv1") != -1;
+		this.ie_sv2 = this.ua.indexOf("sv2") != -1;
+		this.ie6 = (this.ua.indexOf("msie 6") != -1) && (this.ua.indexOf("msie 7") == -1);
+		this.ie7 = (this.ua.indexOf("msie 7") != -1) && (this.ua.indexOf("trident/4.0") == -1);
+		this.ie8 = this.ua.indexOf("msie 8") != -1;
+		this.ff = this.ua.indexOf("firefox") != -1 && this.ua.indexOf("navigator") == -1;
+		this.ff2 = this.ff && this.ua.indexOf("firefox/2.") != -1;
+		this.ff3 = this.ff && this.ua.indexOf("firefox/3.") != -1;
+		this.sf = this.ua.indexOf("safari") != -1;
+		this.op = this.ua.indexOf("opera") != -1;
+		this.ns = this.ua.indexOf("netscape") != -1 || (this.ua.indexOf("firefox") != -1 && this.ua.indexOf("navigator") != -1);
+		this.gecko = this.ua.indexOf("gecko") != -1;
+		this.infopath = this.ua.indexOf("infopath") != -1;
+		this.etc = this.gecko && this.ff && this.ns; 
+
+		this.win = this.ua.indexOf("win") != -1;
+		this.vista = this.ua.indexOf("nt 6") != -1; this.xp = this.ua.indexOf("nt 5.1") != -1; this.w2k = this.ua.indexOf("nt 5.0") != -1; this.w98 = this.ua.indexOf("windows 98") != -1;
+		this.mac = this.ua.indexOf("mac") != -1;
+		this.chrome = this.ua.indexOf("chrome") != -1;
+		this.unix = !(this.win || this.mac);
+		return;
+	}
+};
+browser.init();
+
+var height = 0;
+if ( browser.chrome ) {
+	height = 904;
+} else {
+	height = 900;	
+}
+
+function popup() {
+	if (screen.height == 900) {
+	window.open('/micro/index_900.html', 'micro','fullscreen');
+	}
+	else if (screen.height < 900) {
+	window.open('/micro/index_900under.html', 'micro','channelmode,scrollbars');
+	}
+	else {
+	window.open('/micro/index_900over.html', 'micro','toolbar=no,location=no,status=no,menubar=no,scrollbars=no, resizable=no, width=1200, height=900');
+	}
+}
+
+
+//로케이션 처리 중 공통영역에 대한 처리
+function commonLocMapping(gubun) {
+	var locVal = "";
+	if ( gubun == 'home' ) {
+		var aVal = "";
+		locVal = aVal.split("/")[0] + "/index.do";
+	} else if ( gubun == 'library' ) {
+		locVal = "/episodeList.do";
+	} else if ( gubun == 'member') {
+		locVal = "/memberInfoCheckAuth.do";
+	} else if ( gubun == 'support' ) {
+		locVal = "/mobileInfoView.do";
+	}
+	document.location.href = locVal;
+}
+
+</script>
+
+
+	
+
+
+<script type="text/javascript">
+function frontMenuLink(val) {
+	jQuery("#menuSeq").val(val);
+	var menuLinkUrl = "";
+	if ( val == '101' ) {			menuLinkUrl = "http://www.daelimmuseum.org/index.do";							//대림미술관 메인
+	} else if ( val == '102' ) {	menuLinkUrl = "https://www.daelimmuseum.org/member/login.do";						//공통 로그인
+	} else if ( val == '103' ) {	menuLinkUrl = "https://www.daelimmuseum.org/member/joinStep1.do?CD_CL_MBR=2";		//공통 회원가입
+	} else if ( val == '104' ) {	menuLinkUrl = "http://www.daelimmuseum.org/member/logout.do";					//공통 로그아웃
+	} else if ( val == '105' ) {	menuLinkUrl = "https://www.daelimmuseum.org/member/memberInfoCheckAuth.do";		//공통 내정보변경
+	} else if ( val == '106' ) {	menuLinkUrl = "http://www.daelimmuseum.org/support/infoSnsView.do";				//공통 sns
+	} else if ( val == '107' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/eng/index.do";						//영문사이트이동
+	} else if ( val == '111' ) {	menuLinkUrl = "http://www.daelimmuseum.org/infoShowing.do";						//대림미술관 VISIT
+	} else if ( val == '112' ) {	menuLinkUrl = "http://www.daelimmuseum.org/infoShowing.do";						//대림미술관 VISIT 관람 안내
+	} else if ( val == '113' ) {	menuLinkUrl = "http://www.daelimmuseum.org/support/membershipInfoView.do";		//공통 멤버십안내
+	} else if ( val == '114' ) {	menuLinkUrl = "http://www.daelimmuseum.org/infoComming.do";						//대림미술관 VISIT 오시는길
+	} else if ( val == '115' ) {	menuLinkUrl = "http://www.daelimmuseum.org/infoMuseum.do";						//대림미술관 VISIT 미술관소개
+	} else if ( val == '116' ) {	menuLinkUrl = "http://www.daelimmuseum.org/infoBuilding.do";						//대림미술관 VISIT 건축물소개
+	} else if ( val == '117' ) {	menuLinkUrl = "http://www.daelimmuseum.org/infoCafe.do";						//대림미술관 VISIT 미술관옆집
+	} else if ( val == '121' ) {	menuLinkUrl = "http://www.daelimmuseum.org/onViewTab1.do";						//대림미술관 EXHIBITION
+	} else if ( val == '122' ) {	menuLinkUrl = "http://www.daelimmuseum.org/onViewTab1.do";						//대림미술관 EXHIBITION 현재전시
+	} else if ( val == '123' ) {	menuLinkUrl = "http://www.daelimmuseum.org/pastList.do";							//대림미술관 EXHIBITION 지난전시
+	} else if ( val == '131' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dPassList.do";						//대림미술관 PROGRAM
+	} else if ( val == '132' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dPassList.do";						//대림미술관 PROGRAM DPASS
+	} else if ( val == '133' ) {	menuLinkUrl = "http://www.daelimmuseum.org/goodNightList.do";					//대림미술관 PROGRAM GOODNIGHT
+	} else if ( val == '134' ) {	menuLinkUrl = "http://www.daelimmuseum.org/happyChildrenList.do";				//대림미술관 PROGRAM 교육프로그램
+	} else if ( val == '135' ) {	menuLinkUrl = "http://www.daelimmuseum.org/bridgeLocIndex.do";					//대림미술관 PROGRAM 지역연계프로젝트
+	} else if ( val == '141' ) {	menuLinkUrl = "http://www.daelimmuseum.org/infoLoungeIndex.do";					//대림미술관 PROGRAM DLOUNGE
+	} else if ( val == '151' ) {	menuLinkUrl = "http://www.daelimmuseum.org/library/episodeList.do";				//공통 DLIBRARY
+	} else if ( val == '152' ) {	menuLinkUrl = "http://www.daelimmuseum.org/library/episodeList.do";				//공통 DLIBRARY DEPISODE
+	} else if ( val == '153' ) {	menuLinkUrl = "http://www.daelimmuseum.org/library/momentList.do";				//공통 DLIBRARY DMOMENT
+	} else if ( val == '154' ) {	menuLinkUrl = "http://www.daelimmuseum.org/library/columnList.do";				//공통 DLIBRARY DCOLUMN
+	} else if ( val == '155' ) {	menuLinkUrl = "http://www.daelimmuseum.org/library/interviewList.do";			//공통 DLIBRARY DINTERVIEW
+	} else if ( val == '156' ) {	menuLinkUrl = "http://www.daelimmuseum.org/library/wallpaperList.do";			//공통 DLIBRARY DWALLPAPER
+	} else if ( val == '161' ) {	menuLinkUrl = "http://www.daelimmuseum.org/support/dCalendarView.do";			//공통 DCALENDAR
+	} else if ( val == '171' ) {	menuLinkUrl = "http://www.daelimmuseum.org/support/mobileInfoView.do";			//공통 SUPPORT
+	} else if ( val == '172' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/infoShowing.do?info=3";			//모바일앱 소개
+	} else if ( val == '173' ) {	menuLinkUrl = "https://www.daelimmuseum.org/support/reserveTeamWriteStep1.do";	//공통 단체관람 예약
+	} else if ( val == '174' ) {	menuLinkUrl = "http://www.daelimmuseum.org/support/noticeList.do";				//공통 공지사항
+	} else if ( val == '175' ) {	menuLinkUrl = "http://www.daelimmuseum.org/support/eventList.do";				//공통 이벤트
+	} else if ( val == '176' ) {	menuLinkUrl = "http://www.daelimmuseum.org/support/faq.do";						//공통 FAQ
+	} else if ( val == '177' ) {	menuLinkUrl = "http://www.daelimmuseum.org/support/inquiryWrite.do?target_url="+location.pathname; //공통 1:1문의
+	} else if ( val == '178' ) {	menuLinkUrl = "http://www.daelimmuseum.org/support/recruitList.do";				//채용공고
+	
+	} else if ( val == '201' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/index.do";					//디뮤지엄 메인
+	} else if ( val == '211' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/infoShowing.do";					//디뮤지엄 VISIT
+	} else if ( val == '212' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/infoShowing.do";				//디뮤지엄 VISIT 관람 안내
+	} else if ( val == '213' ) {	menuLinkUrl = "http://www.daelimmuseum.org/support/membershipInfoView.do";		//디뮤지엄 VISIT D 멤버십안내
+	} else if ( val == '214' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/infoComming.do";				//디뮤지엄 VISIT 오시는길
+	} else if ( val == '215' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/infoMuseum.do";				//디뮤지엄 VISIT 미술관 소개
+	} else if ( val == '216' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/infoBuilding.do";				//디뮤지엄 VISIT 건축물 소개
+	} else if ( val == '221' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/onViewTab1.do";				//디뮤지엄 EXHIBITION
+	} else if ( val == '222' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/onViewTab1.do";				//디뮤지엄 EXHIBITION 현재전시
+	} else if ( val == '223' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/pastList.do";					//디뮤지엄 EXHIBITION 지난전시
+	//} else if ( val == '231' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/dClassList.do";				//디뮤지엄 PROGRAM
+	} else if ( val == '231' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/hannamSalonList.do";				//디뮤지엄 PROGRAM
+	} else if ( val == '232' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/dPassList.do";				//디뮤지엄 PROGRAM DPASS
+	} else if ( val == '233' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/dClassList.do";			//디뮤지엄 PROGRAM CLASS 7PM
+	} else if ( val == '236' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/meetUpList.do";			//디뮤지엄 PROGRAM MEET UP
+	} else if ( val == '237' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/dConcertList.do";			//디뮤지엄 PROGRAM 미술관 콘서트
+	} else if ( val == '238' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/hannamSalonList.do";			//디뮤지엄 PROGRAM 한남살롱
+	} else if ( val == '239' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/specialWorkshopList.do";			//디뮤지엄 PROGRAM SPECIAL WORKSHOP
+	} else if ( val == '240' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/artNfitList.do";			//디뮤지엄 PROGRAM ART&FIT
+	} else if ( val == '241' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/museumPaletteList.do";			//디뮤지엄 PROGRAM MUSEUM PALETTE
+	} else if ( val == '242' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/artistAtelierList.do";			//디뮤지엄 PROGRAM 아티스트 아틀리에
+	
+	} else if ( val == '234' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/kidsWorkroomList.do";		//디뮤지엄 PROGRAM 교육프로그램
+	} else if ( val == '234A' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/kidsWorkroomList.do";				//디뮤지엄 PROGRAM 교육프로그램 어린이(Kids Workkroom)
+	} else if ( val == '234B' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/happyBirthdayList.do";				//디뮤지엄 PROGRAM 교육프로그램 어린이(Happy Birthday)
+	} else if ( val == '234C' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/museumPeopleList.do";				//디뮤지엄 PROGRAM 교육프로그램 성인,청소년(틴 랩)
+	} else if ( val == '234D' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/teacherEduList.do";					//디뮤지엄 PROGRAM 교육프로그램 교사 워크숍
+	} else if ( val == '234E' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/universityList.do";					//디뮤지엄 PROGRAM 교육프로그램 대학생(필드 트립)
+	} else if ( val == '234F' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/senseImagineList.do";					//디뮤지엄 PROGRAM 교육프로그램 성인,청소년(틴 랩)
+	} else if ( val == '234G' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/momsMondayList.do";					//디뮤지엄 PROGRAM 교육프로그램 육아맘(MOM`S MONDAY)
+	
+	
+	
+	} else if ( val == '235' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/bridgeLocIndex.do";			//디뮤지엄 PROGRAM 지역연계프로젝트
+	} else if ( val == '235A' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/bridgeLocOneView.do";		//디뮤지엄 PROGRAM 지역연계프로젝트 DA+E데이트프로젝트
+	} else if ( val == '235B' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/bridgeLocTwoView.do";		//디뮤지엄 PROGRAM 지역연계프로젝트 통의동~통인동프로젝트
+	} else if ( val == '235C' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/bridgeLocThreeView.do";		//디뮤지엄 PROGRAM 지역연계프로젝트 2010만안의이미지기록과기억
+	} else if ( val == '235D' ) {	menuLinkUrl = "http://www.daelimmuseum.org/dmuseum/bridgeLocFourView.do";		//디뮤지엄 PROGRAM 지역연계프로젝트 해피투게더
+	
+	} else if ( val == '301' ) {	menuLinkUrl = "http://www.daelimmuseum.org/guseulmoa/index.do";				//구슬모아당구장 메인
+	}
+	jQuery("#menuFrm").attr("action", menuLinkUrl);
+	jQuery("#menuFrm").submit();
+}
+
+//method description : 페이지 로드
+//@param	none
+//@returns	{Object}
+
+jQuery(document).ready(function() {
+	var selectedMenuUrl = jQuery("#menuSeq").val();
+	if ( selectedMenuUrl.substring(0, 2) == "21" ) {
+		jQuery(".lnb_menu .menu01 .ui_header_slide_clickable").addClass("active");
+	} else if ( selectedMenuUrl.substring(0, 2) == "22" ) {
+		jQuery(".lnb_menu .menu02 .ui_header_slide_clickable").addClass("active");
+	} else if ( selectedMenuUrl.substring(0, 2) == "23" ) {
+		jQuery("#menuProgram").addClass("active");
+	} else if ( selectedMenuUrl.substring(0, 2) == "15" ) {
+		jQuery("#menuLibrary").addClass("active");
+	} else if ( selectedMenuUrl.substring(0, 2) == "16" ) {
+		jQuery(".lnb_menu .menu05 .ui_header_slide_clickable").addClass("active");
+	} else if ( selectedMenuUrl.substring(0, 2) == "17" ) {
+		jQuery(".lnb_menu .menu06 .ui_header_slide_clickable").addClass("active");
+	}
+});
+
+</script>
+
+<form id="menuFrm" name="menuFrm" method="post">
+	<input type="hidden" id="menuSeq" name="menuSeq" value="222">
+</form>
+
+<header id="header"> <!-- 디뮤지엄 헤더 -->
+	<div class="set_header_top">
+		<!-- 미술관 이동 탭 -->
+		<div class="link_museum">
+			<a href="javascript:frontMenuLink(&#39;101&#39;);" title="대림미술관 홈으로 이동">대림미술관</a>
+			<a href="javascript:frontMenuLink(&#39;201&#39;);" class="active" title="디뮤지엄 홈으로 이동">디뮤지엄</a> <!-- 선택된 미술관에 active 클래스 추가 및 현재 페이지 숨김텍스트 제공 -->
+			<a href="javascript:frontMenuLink(&#39;301&#39;);" title="구슬모아 당구장 홈으로 이동"><span class="hide">현재 페이지</span>구슬모아당구장</a>
+		</div>
+		<!-- //미술관 이동 탭 -->
+		<!-- GNB -->
+		<div id="gnb">
+			<ul>
+
+				<li><a href="javascript:frontMenuLink(&#39;102&#39;);">LOGIN</a></li>
+				<li><a href="javascript:frontMenuLink(&#39;103&#39;);">JOIN</a></li>
+
+				<li><a href="javascript:frontMenuLink(&#39;106&#39;);">SNS</a></li>
+				<li><a href="javascript:frontMenuLink(&#39;107&#39;);">ENG</a></li>
+				<!--<li><a href="javascript:alert('서비스 준비 중입니다.');">ENG</a></li>-->
+			</ul>
+		</div>
+		<!-- //GNB -->
+	</div>
+
+	<div id="lnb" class="ui_header_slide">
+		<div class="set_lnb ui_header_slide_menu">
+		<!--div class="set_lnb"-->
+			<div class="lnb_in">
+				<!-- 미술관 로고 -->
+				<div class="logo_museum"><a href="javascript:frontMenuLink(&#39;201&#39;);" title="D MUSEUM 홈으로 이동">D MUSEUM</a></div>
+				<!-- //미술관 로고 -->
+				<!-- LNB -->
+				<ul class="lnb_menu">
+				<!--ul class="lnb_menu hide"-->
+					<li class="menu01">
+						<a href="javascript:frontMenuLink(&#39;211&#39;);" class="ui_header_slide_clickable">VISIT</a> <!-- 메뉴 활성화시 active 클래스 추가 -->
+						<ul class="depth02">
+							<li><a href="javascript:frontMenuLink(&#39;212&#39;);">관람 안내</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;215&#39;);">미술관 소개</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;214&#39;);">오시는길</a></li>
+						</ul>
+					</li>
+					<li class="menu02">
+						<a href="javascript:frontMenuLink(&#39;222&#39;);" class="ui_header_slide_clickable active">EXHIBITION</a>
+						<ul class="depth02">
+							<li><a href="javascript:frontMenuLink(&#39;222&#39;);">현재 전시</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;223&#39;);">지난 전시</a></li>
+						</ul>
+					</li>
+					<li class="menu03">
+						<a id="menuProgram" href="javascript:frontMenuLink(&#39;238&#39;);" class="ui_header_slide_clickable">PROGRAM</a>
+						<ul class="depth02">
+							
+							<li><a href="javascript:frontMenuLink(&#39;238&#39;);">한남살롱</a></li>
+							
+							<li><a href="javascript:frontMenuLink(&#39;233&#39;);">CLASS 7PM</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;242&#39;);">ARTIST'S ATELIER</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;241&#39;);">MUSEUM PALETTE</a></li>
+							
+							<li><a href="javascript:frontMenuLink(&#39;234G&#39;);">MOM'S MONDAY</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;239&#39;);">SPECIAL WORKSHOP</a></li>
+							<li class=""><a href="javascript:frontMenuLink(&#39;234A&#39;);" class="ui_header_slide_clickable">전시 연계교육<span class="more">하위 메뉴 보기</span></a>
+								<div class="depth03">
+									<ul>
+										
+										<li><a href="javascript:frontMenuLink(&#39;234A&#39;);">어린이(키즈 워크룸)</a></li>
+										
+										<li><a href="javascript:frontMenuLink(&#39;234F&#39;);">청소년(틴 랩)</a></li>
+										<li><a href="javascript:frontMenuLink(&#39;234E&#39;);">대학생, 성인(디뮤지엄 필드트립)</a></li>
+										<li><a href="javascript:frontMenuLink(&#39;234D&#39;);">교사(교사 워크숍)</a></li>
+										
+									</ul>
+								</div>
+							</li>
+							
+						</ul>
+					</li>
+					<li class="menu04">
+						<a id="menuLibrary" href="javascript:frontMenuLink(&#39;151&#39;);" class="ui_header_slide_clickable">LIBRARY</a>
+						<ul class="depth02">
+							<li><a href="javascript:frontMenuLink(&#39;152&#39;);">D STORY</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;153&#39;);">D MOMENT</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;156&#39;);">D WALLPAPER</a></li>
+						</ul>
+					</li>
+					<li class="menu05">
+						<a href="javascript:frontMenuLink(&#39;161&#39;);" class="ui_header_slide_clickable">NEWS</a>
+						<ul class="depth02">
+							<li><a href="javascript:frontMenuLink(&#39;161&#39;);">캘린더</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;174&#39;);">공지사항</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;175&#39;);">이벤트</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;176&#39;);">FAQ</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;177&#39;);">1:1 문의하기</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;172&#39;);">모바일앱 소개</a></li>
+							<li><a href="javascript:frontMenuLink(&#39;178&#39;);">채용공고</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- //LNB -->
+				<!-- 미술관 소개 -->
+				<div class="about_museum">
+					<a href="javascript:frontMenuLink(&#39;215&#39;);">
+						<span class="img"><img src="./main_files/img_dmuseum190213.jpg" alt=""></span>
+						<p class="txt"><span>About D MUSEUM</span>한남동의 문화예술 아지트</p>
+					</a>
+				</div>
+				<!-- //미술관 소개 -->
+			</div>
+		</div>
+	</div>
+</header>
+	<script type="text/javascript">
+		jQuery("#wrap").hasClass("daelim") == true ? jQuery("#wrap").removeClass("daelim") : "";
+		jQuery("#wrap").hasClass("dmuseum") == true ? "" : jQuery("#wrap").addClass("dmuseum");
+		jQuery("#wrap").hasClass("guseulmoa") == true ? jQuery("#wrap").removeClass("guseulmoa") : "";
+	</script>
+	
+
+	<!-- //gnb -->
+
+<!-- 150424 수정 -->
+	<div id="container" class="wide04"><!--가로사이즈 최대1600-->
+<!-- //150424 수정 -->
+		
+		<!-- contents -->
+		<section id="contents">
+			
+<form id="exhibitionForm" name="exhibitionForm" method="post">
+	<input type="hidden" id="NEXT_NO_DSPL_ASBL_SEQ" name="NEXT_NO_DSPL_ASBL_SEQ">
+	<input type="hidden" id="no_ntc_plte_seq" name="no_ntc_plte_seq">
+	<input type="hidden" id="clDspl" name="clDspl">
+			
+			<!-- location -->
+			<nav class="location">
+				<h1 class="hide">페이지 로케이션</h1>
+				<a href="javascript:frontMenuLink(&#39;201&#39;);">홈</a> <a href="javascript:frontMenuLink(&#39;221&#39;);">EXHIBITION</a> <span>현재 전시</span>
+			</nav>
+			<!-- //location -->
+
+<!-- 150424 수정 -->
+			<div class="wrap_topbanner ui_toggle_fixed"><!--fixed로 변경될때 fixed 추가-->
+			
+				<div class="area_fixed">
+					<!-- 배너 -->
+					<div class="banner_exhibition" style="background:url(&#39;/att/[363346_369341]20190209160145.jpg&#39;) no-repeat 50% 50%;">
+						<div class="text_banner">
+							<span class="hide">I draw 그리는 것보다 멋진 건 없어 2019.02.14 - 2019.09.01</span> <!-- 숨김 텍스트 -->
+							<ul class="list_info">
+								
+								
+									<li><em>장소</em> 디뮤지엄</li>
+								
+								
+								
+									<li><em>후원</em> 대림, 삼성화재</li>
+								
+								
+								
+							</ul>
+						</div>
+					</div>
+					<!-- //배너 -->
+					
+					<!-- 탭영역 앞쪽 정렬 처리 -->
+					
+					<!-- 150512 수정 -->
+					<div class="set_linktab ui_horizon_bar">
+					<!-- //150512 수정 -->
+					
+						<ul>
+							<li class="active"><a href="javascript:goTabs(&#39;1&#39;);" class="btn_tab" title="전시소개 컨텐츠 보기">전시소개</a></li>
+							
+								<li><a href="javascript:goTabs(&#39;2&#39;);" class="btn_tab" title="작가소개 컨텐츠 보기">작가소개</a></li>
+							
+							
+							
+								<li><a href="javascript:goTabs(&#39;4&#39;);" class="btn_tab" title="전시연계 프로그램 컨텐츠 보기">전시연계 프로그램</a></li>
+							
+							
+								<li><a href="javascript:goTabs(&#39;5&#39;);" class="btn_tab" title="도록/뮤지엄샵 컨텐츠 보기">뮤지엄샵</a></li>
+							
+						</ul>
+					</div>
+					<nav class="indicators ui_indicators">
+
+						<a href="http://www.daelimmuseum.org/dmuseum/onViewTab1.do#" class="active">1번째 컨텐츠 보기<span class="flag">ABOUT THE EXHIBITION</span></a>
+
+						<a href="http://www.daelimmuseum.org/dmuseum/onViewTab1.do#">2번째 컨텐츠 보기<span class="flag">INTRODUCTORY FILM</span></a>
+
+						<a href="http://www.daelimmuseum.org/dmuseum/onViewTab1.do#">3번째 컨텐츠 보기<span class="flag">EXHIBITION FEATURES</span></a>
+
+						
+						
+					</nav>
+				</div>
+				<section class="section_linktab">
+					<div class="box_linktab dmuseum">
+
+						<article class="article_linktab ui_indicator_target">
+							<div class="wrap_linktab">
+								<h2 class="tit"><span class="bline">ABOUT THE EXHIBITION</span></h2>
+								<div class="cont_linktab"><style type="text/css">
+	.article_linktab{padding-top:100px}
+	.article_linktab:first-child h2{top:-30px}
+	.dmuseum .article_linktab h2 .bline{font-weight:700}
+	.set_editor{position:relative}
+	.set_editor strong{font-weight:700}
+	.set_editor .set_in{position:relative;width:1084px;margin:0 auto}
+	.set_editor p{font-size:20px;line-height:32px;color:#000;text-align:justify;word-break:keep-all}
+	.img01{position:relative;height:576px;margin-top:18px;text-align:right}
+	.img01>img{position:absolute;bottom:0;right:0}
+	.img01 .img01_txt{position:relative;left:-91px;padding-top:212px;text-align:center}
+	.img01 .img01_txt p{text-align:center}
+	.img01 .img01_txt p:last-child{margin-top:27px;font-size:16px;line-height:24px}	
+</style>
+
+<div class="set_editor">
+	<div class="set_in">
+		<p style="padding-top:35px">디뮤지엄은 2019년 2월 14일부터 2019년 9월 1일까지 마스터 일러스트레이터들을 포함해 최근 독창적인 작업으로 세계 각지에서 주목 받고 있는 작가 16인의 드로잉, 일러스트레이션 등 350여 점의 작품을 소개하는 전시 ≪I draw: 그리는 것보다 멋진 건 없어≫를 개최합니다. <br>
+		이번 전시는 익숙한 듯 새로운 풍경, 내면으로의 여정 등을 보여주며 호기심을 자극하는 작가들의 작품 세계를 옴니버스식 구성으로 선보입니다. 이를 통해 역사 속에서 각 시대의 다양한 면모를 기록하고 기억할 뿐 아니라 개인의 생각과 상상을 시각화하여 개성적으로 표현해 온 그리는 것의 가치에 주목합니다.<br>
+		디지털화된 시각 이미지로 가득한 요즘, 작가들이 손 끝으로 그려낸 일상 속 특별한 이야기와 눈과 카메라가 포착하지 못하는 섬세하고 미묘한 감성을 오롯이 느껴보며, 보이는 것 이상의 이야기를 상상하게 하고 새로운 감각으로 경험하게 하는 단순하면서도 멋진 행위, ‘그리는 것’의 특별함을 재발견해 보기를 바랍니다.</p>
+	</div>
+	<div class="img01">	
+		<img src="./main_files/art01.jpg" alt="Rain, 2015 ©Eomyujeong" style="margin-right:-48px">
+		<div class="img01_txt">
+			<p><strong><i>“드로잉을 통해 사물 간의 관계를 찾는다.<br>
+			시 안에 담긴 은유가 단절된 세상을 이어주듯이.”</i></strong></p>
+			<p><i>“Drawing is a way of coming upon the connection between things,<br>
+					just like metaphor in poetry reconnects what has become separated.”<br><br>
+					- 존 버거 John Berger -</i>
+			</p>
+		</div>
+	</div>
+</div></div>
+							</div>
+						</article>
+
+						<article class="article_linktab ui_indicator_target">
+							<div class="wrap_linktab">
+								<h2 class="tit"><span class="bline">INTRODUCTORY FILM</span></h2>
+								<div class="cont_linktab"><style type="text/css">					
+.flimWrap{position:relative;width:1920px;padding-top:130px;margin-left:50%;left:-960px;height:520px;background:#222}	
+.flimWrap,.frame_vod{background:#222}
+.frame_vod{position:relative}
+.btn_img.video{top:163px;width:90px;height:90px;margin:0 0 0 -45px;background:url('/front/images/exhibition/201901/btn_avi.png') 0 0 no-repeat}
+.btn_img.video:hover{background-position:0 0 !important}
+.dmuseum .article_linktab:nth-of-type(2){padding-top:0}
+.dmuseum .article_linktab:nth-of-type(2) h2.tit{top:58px}
+</style>	
+
+<div class="set_editor">	
+<div class="flimWrap">
+<div class="frame_vod"><img name="alc-images" alt="interview" src="./main_files/bg_avi.jpg">
+<a class="ui_play_able" href="http://www.daelimmuseum.org/dmuseum/onViewTab1.do#" target="_blank"><span class="btn_img video vod_play">동영상 레이어 팝업 보기</span>
+</a>
+</div>
+<article class="pop_dim_wrap ui_popup">
+<div class="pop_dim_cont type02">
+<div class="pop_dim_cont_in">
+<div class="frame_vod">			
+<iframe width="1080" height="450" title="유투브 동영상" frameborder="0" allowfullscreen="" data-youtube-src="https://www.youtube.com/embed/AHMwplWTlWE?enablejsapi=1&amp;rel=0" src="./main_files/saved_resource.html"></iframe>
+</div>
+</div>			
+<button class="btn_img close ui_popup_close" type="button">닫기</button>
+</div>
+</article>
+</div>	
+</div></div>
+							</div>
+						</article>
+
+						<article class="article_linktab ui_indicator_target">
+							<div class="wrap_linktab">
+								<h2 class="tit"><span class="bline">EXHIBITION FEATURES</span></h2>
+								<div class="cont_linktab">
+<style type="text/css">	
+	.features{}	
+	.features h3{font-size:60px;line-height:60px;font-weight:800;text-align:center;color:#000}		
+	.features p{margin-top:30px}	
+	.features h3+p{margin-top:26px;font-size:24px;font-weight:700;text-align:center}	
+	.features .row{position:relative}
+	.features .row:after{clear:both;display:block;content:''}
+	.features .row .fl,
+	.features .row .fr{position:relative;float:left;width:542px}
+	.features .row .fl>p{width:460px}
+	.features figure{position:relative;width:542px;text-align:center}
+	.features figure>img{position:relative}
+	.features figure figcaption{width:100%;text-align:right;font-size:11px;margin:3px auto 0}
+	
+	.features .row:nth-of-type(1){margin-top:68px}
+	.features .row:nth-of-type(2){margin-top:89px}
+	.features .row:nth-of-type(3){margin-top:59px}
+	.features .row:nth-of-type(4){margin-top:111px}
+	
+	.features .row:nth-of-type(1) h3{padding-top:126px}
+	.features .row:nth-of-type(2) h3{padding-top:53px;margin-left:-81px}
+	.features .row:nth-of-type(3) h3{padding-top:104px}
+	.features .row:nth-of-type(3) .fr{left:12px}
+	.features .row:nth-of-type(3) figure>img{left:-14px}
+	.features .row:nth-of-type(4) figure figcaption{text-align:center}
+	
+	.features .row:nth-of-type(1) figcaption{width:400px}
+	.features .row:nth-of-type(2) figcaption{width:542px}
+	.features .row:nth-of-type(3) figcaption{width:398px}
+	.features .row:nth-of-type(4) figcaption{margin-top:29px}		
+</style>	
+
+<div class="set_editor features">
+	<div class="set_in">
+	
+		<div class="row">
+			<div class="fl">
+				<figure>
+					<img src="./main_files/art02.jpg" alt="Chilean desert, 2015 ©Oamul Lu">
+					<figcaption>Chilean desert, 2015 ©Oamul Lu</figcaption>
+				</figure>
+			</div>
+			<div class="fr">
+				<h3>16 Artists</h3>
+				<p>16인의 세계적인 아티스트 총망라</p>
+				<p>피에르 르탕(Pierre Le-Tan), 해티 스튜어트(Hattie Stewart), 언스킬드 워커(Unskilled Worker), 오아물 루(Oamul Lu) 등 독창적인 작업으로 세계 각지에서 주목 받고 있는 해외 작가들을 비롯해 차세대 아티스트로 독보적인 활동을 보여주고 있는 김영준, 람한, 무나씨, 신모래, 엄유정, 조규형 등 국내 작가들까지 한 곳에서 만나 볼 수 있습니다.</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="fl">
+				<h3>350 Art Works</h3>
+				<p>350 여 점의 작품을 선보이는 대규모 기획 전시</p>
+				<p>작가들의 섬세한 감성과 공감 가는 일상의 이야기를 개성적으로 담아낸 드로잉, 일러스트레이션, 오브제, 애니메이션, 설치 등 다양한 작품을 옴니버스식 공간 구성을 통해 소개합니다.</p>
+			</div>
+			<div class="fr">
+				<figure>
+					<img src="./main_files/art03.jpg" alt="The Tiger that lost its stripes, 2017 ©Unskilled Worker">
+					<figcaption>The Welbelove Cousins, 2018 ©Unskilled Worker</figcaption>
+				</figure>
+				
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="fl">
+				<figure>
+					<img src="./main_files/art04.jpg" alt="Le secret I, 2018 ©Kristelle Rodeia">
+					<figcaption>Le secret I, 2018 ©Kristelle Rodeia</figcaption>
+				</figure>
+			</div>
+			<div class="fr">
+				<h3>Multisensory<br>experience</h3>
+				<p>작가들의 세계관을 세심하게 연출한 공감각적 공간 기획</p>
+				<p>창문, 정원, 응접실, 박물관 등 참여 작가들의 작업 세계에 영감을 준 공간적 모티브를 바탕으로 시노그라피(scenography), 향(Scent), 사운드(Sound)를 이용해 공감각적으로 연출된 전시장의 안과 밖을 거닐며 일상의 장소 속 숨겨진 환상의 순간을 경험할 수 있습니다.</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="fl" style="width:355px;margin-left:-102px">
+				<figure>
+					<img src="./main_files/art05.jpg" alt="Rain, 2015 ©Eomyujeong">
+					<figcaption>Rain, 2015 ©Eomyujeong</figcaption>
+				</figure>
+			</div>
+			<div class="fl" style="width:369px;margin-left:17px">
+				<figure>
+					<img src="./main_files/art06.jpg" alt="I don&#39;t have time for this ©Hattie Stewart">
+					<figcaption>Age gap, 2017  ©Moonassi</figcaption>
+				</figure>
+			</div>
+			<div class="fl" style="width:368px;margin-left:40px">
+				<figure>
+					<img src="./main_files/art07.jpg" alt="Sundaayyyssss, 2014 ©Stefan Marx">
+					<figcaption>Sundaayyyssss, 2014 ©Stefan Marx</figcaption>
+				</figure>
+			</div>			
+		</div>		
+	</div>
+</div></div>
+							</div>
+						</article>
+
+						
+							
+						
+							
+						<!-- 배너 -->
+						
+							<article class="article_linktab next_exhibition ui_indicator_limit">
+								<!-- 150611 삭제 -->
+								<!-- 
+								<div class="wrap_linktab">
+									
+										<a href="javascript:goLibraryView('1', '8526');" class="banner" title="MONENT 페이지로 이동">
+											<span class="img"><img src="/att/[364542_371336]20190628163344.jpg" alt="한남살롱: CONCERT &lt;민수는 혼란스럽다&gt; " /></span>
+											<span class="tit">
+												<em class="moment">MOMENT</em>
+												<span class="text">[한남살롱] 6월의 한남살롱: CONCERT &lt;민수는 혼란스럽다&gt; </span>
+											</span>
+										</a>
+									
+									
+										<a href="javascript:goLibraryView('2', '8528');" class="banner" title="episode 소개 페이지로 이동">
+											<span class="img"><img src="/att/[364547_371347]20190628173912.jpg" alt="#11. Hattie Stewart :  메롱, 낙서폭탄 " /></span>
+											<span class="tit">
+												<em class="column">EPISODE</em>
+												<span class="text">#11. Hattie Stewart :  메롱, 낙서폭탄 </span>
+											</span>
+										</a>
+									
+								</div>
+								-->
+								<!-- //150611 삭제 -->
+								 
+								
+							</article>
+						
+						<!-- //배너 -->
+					</div>
+				</section>
+			</div>
+			
+			
+
+<script type="text/javascript">
+//method 하단 info 영역 이동
+function goInfoView(val, pageParam) {
+	if ( val == 'info') {
+		jQuery("#exhibitionForm").attr("action", "/dmuseum/infoShowing.do?info="+pageParam);
+	} else if( val == 'map' ) {
+		jQuery("#exhibitionForm").attr("action", "/dmuseum/infoComming.do");
+	}
+	jQuery("#exhibitionForm").submit();
+}
+</script>
+
+<style type="text/css">
+	.tourlist.article_info .cont_info .title03{margin-top:11px;padding-top:11px;margin-bottom:5px}
+	.tourlist.article_info .cont_info .title03:first-child{margin-top:19px;padding-top:0}
+</style>
+<div class="content_wide01">
+	<section class="content_in section_info">
+		<article class="article_info">
+			<h2 class="tit tit01">Information</h2>
+			<div class="cont_info">
+				<div class="title03">
+					<h3>관람 시간 안내</h3>
+				</div>
+				<p class="text_info">화-일요일 10:00AM - 6:00PM<br>
+				금, 토요일 10:00AM - 8:00PM<br>
+				※&nbsp;매주 월요일 휴관</p>
+				<div class="title03">
+					<h3>관람료 안내</h3>
+				</div>
+				<p class="text_info">성인 12,000원<br>
+				학생(초/중/고) 5,000원 / 미취학아동 3,000원<br>
+				※&nbsp;매표는 전시종료 30분 전에 마감</p>
+			</div>
+			<a href="javascript:goInfoView(&#39;info&#39;, &#39;1&#39;);" class="text_link">자세히 보기</a>
+		</article>
+		<article class="article_info">
+			<h2 class="tit tit02">Map</h2>
+			<div class="cont_info">
+				<div class="title03">
+					<h3>D MUSEUM</h3>
+				</div>
+				<p class="text_info">서울특별시 용산구 독서당로29길 5-6,<br>Replace한남 F동<br>T.070.5097.0020</p>
+				<div class="img_map"><a href="http://www.daelimmuseum.org/dmuseum/infoComming.do" title="지도 크게보기"><img src="./main_files/img_map_2.jpg" alt="지도이미지"></a></div>
+			</div>
+			<a href="javascript:goInfoView(&#39;map&#39;, &#39;&#39;);" class="text_link">자세히 보기</a>
+		</article>
+		<article class="article_info">
+			<h2 class="tit tit03">Membership</h2>
+			<div class="cont_info">
+				<div class="title03">
+					<h3>온라인 회원 할인</h3>
+				</div>
+				<p class="text_info">디뮤지엄의 소식을 가장 먼저!<br>
+				전시관람 20% 이상 할인</p>
+
+				<div class="title03">
+					<h3>D MEMBERS CARD</h3>
+				</div>
+				<p class="text_info">45%이상 할인된 가격으로<br>전시3회+FAST PASS+아트상품&amp;커피 할인 까지</p>
+			</div>
+			<a href="javascript:goInfoView(&#39;info&#39;, &#39;2&#39;);" class="text_link">자세히 보기</a>
+		</article>
+		<article class="article_info tourlist">
+			<h2 class="tit tit04">Tour</h2>
+			<div class="cont_info">
+				<div class="title03">
+					<h3>모바일 투어</h3>
+				</div>
+				<p class="text_info"><!--색다른 감성으로 작가들이 그려낸 일상 속 <br>특별한 이야기를 살펴보는 방법!-->
+				디뮤지엄 앱에서 만나보는 작가와 작품 속 이야기
+
+
+				</p>
+				<div class="title03">
+					<h3>데일리 투어</h3>
+				</div>
+				<p class="text_info" style="letter-spacing:-0.02em">
+				<!--남녀노소 모두를 위한 전시 설명 <br>시간 평일에 하루 다섯 번, 예약 필요 없이  <br>에듀케이터와 함께하는 도슨트 투어-->
+				평일 하루 다섯 번, 에듀케이터와 함께하는 도슨트 투어
+				</p>
+				<div class="title03">
+					<h3>스페셜 투어</h3>
+				</div>
+				<p class="text_info"><!--단체 관람을 계획하고 있다면? <br>친구, 지인들과 함께하는 특별한 전시감상-->
+				친구, 지인들과 함께 단체 관람을 계획하고 있다면? 
+
+				</p>
+				<div class="title03">
+					<h3>팝업 투어</h3>
+				</div>
+				<p class="text_info">수요일 저녁과 토요일 아침,<br> 특별하게 전시를 즐기는 방법!</p>
+				
+			</div>
+			<a href="javascript:goInfoView(&#39;info&#39;, &#39;4&#39;);" class="text_link">자세히 보기</a>
+		</article>
+	</section>
+</div>
+			
+</form>
+			
+		</section>
+		<!-- //contents -->
+	</div>
+	
+	<!-- footer -->
+	
+
+
+
+<!--	server ip: 203.226.4.134
+-->
+
+<script type="text/javascript">
+function fnMoveOtherPage(val) {
+	if ( val == 'privateInfoRule' ) {
+	} else if ( val == 'controllRule' ) {
+	} else if ( val == 'useProvision' ) {
+	} else if ( val == 'siteMap' ) {
+	} else if ( val == 'contactUs' ) {
+	}
+	return;
+}
+
+//method description : 모바일웹에서 PC버전 보기 선택시 호출 스크립트
+//param : ctgr (변경하고자 하는 모드의 구분자값 P : pcweb / M : mobileweb)
+function viewChangeMode(ctgr) {
+	//alert("kranj ### PC버전인지, MOBILE버전인지 체크 벨류 view mode : " + ctgr);
+	jQuery("form").last().append( "<input type='hidden' id='viewMode' name='viewMode' />");
+	jQuery("#viewMode").val(ctgr);
+	var changeUrl = "";
+	var currentUrl = document.location.href;
+	changeUrl = currentUrl.replace(currentUrl.split("/")[0] + "/", "").replace(currentUrl.split("/")[1] + "/", "").replace(currentUrl.split("/")[2], "");
+	if ( ctgr == 'P') {
+		jQuery("form").attr("action", changeUrl.replace("/mobile", ""));
+	} else if ( ctgr == 'M' ) {
+		jQuery("form").attr("action", "/mobile" + changeUrl);
+	}
+	jQuery("form").submit();
+}
+</script>
+
+
+<!-- footer -->
+<footer id="footer">
+	<div class="set_footer">
+		<div class="footer_in">
+			<div class="set_museum">
+				<ul>
+					<li>
+						<a href="http://www.daelimmuseum.org/index.do" class="tit" title="대림미술관 홈으로 이동">대림미술관</a>
+						<span class="contact01">서울특별시 종로구 자하문로4길 21</span>
+						<span class="contact01">지번주소 : 통의동 35-1</span>
+						<span class="contact02">T. 02-720-0667 &nbsp;F. 02-720-0665</span>
+						<div class="set_sns">
+							<ul>
+								<li class="sns01"><a href="http://www.facebook.com/daelimmuseum" target="_blank">페이스북</a></li>
+								<!--li class="sns02"><a href="http://twitter.com/daelim_museum" target="_blank">트위터</a></li-->
+								<li class="sns03"><a href="https://www.instagram.com/daelimmuseum/" target="_blank">인스타그램</a></li>
+								<li class="sns04"><a href="http://www.youtube.com/user/DaelimMuseum" target="_blank">유튜브</a></li>
+								<li class="sns05"><a href="http://tv.naver.com/daelimmuseum" target="_blank">네이버 TV</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.daelimmuseum.org/dmuseum/index.do" class="tit" title="D MUSEUM 홈으로 이동">D MUSEUM</a>
+						<span class="contact01">서울특별시 용산구 독서당로29길 5-6</span>
+						<span class="contact01">지번주소 : 한남동 50-1, Replace 한남 F동</span>
+						<span class="contact02">T. 070-5097-0020 </span>
+					</li>
+					<li>
+						<a href="http://www.daelimmuseum.org/guseulmoa/index.do" class="tit" title="구슬모아 당구장 홈으로 이동">D PROJECT SPACE<br>구슬모아당구장</a>
+						<span class="contact01">서울특별시 용산구 독서당로 85, B3층</span>
+						<span class="contact01">지번주소 : 한남동 28-2</span>
+						<span class="contact02">T.02-3785-0667</span>
+						<div class="set_sns">
+							<ul>
+								<!--li class="sns01"><a href="https://www.facebook.com/dprojectspace" target="_blank">페이스북</a></li-->
+								<li class="sns03"><a href="https://www.instagram.com/dprojectspace/" target="_blank">인스타그램</a></li>
+								<!--li class="sns02"><a href="http://www.twitter.com/D_Project_Space" target="_blank">트위터</a></li-->
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_menu">
+				<ul>
+					<li><a href="http://www.daelimmuseum.org/privateInfoRule.do">개인정보 처리방침</a></li>
+					<li><a href="http://www.daelimmuseum.org/useProvision.do">이용약관</a></li>
+					<li><a href="http://www.daelimmuseum.org/controlRule.do">영상정보처리기기 운영 관리방침</a></li>
+					<li><a href="http://www.daelimmuseum.org/siteMap.do">SITE MAP</a></li>
+					<li><a href="mailto:Info@daelimmuseum.org">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="footer_info">
+				<span class="text">(재)대림문화재단</span><span class="text">사업자등록번호: 305-82-09028</span><span class="text">서울특별시  종로구 자하문로4길 21(통의동 35-1)</span>
+				<span class="copyright">COPYRIGHT 2015 BY DAELIM MUSEUM ALL RIGHT RESERVED.</span>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<script type="text/javascript" src="./main_files/common_ui.js.다운로드"></script>
+
+<!-- image for imacro -->
+<img src="./main_files/icon_etc.png" style="display: none;" alt="imacro">
+
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	//ga('create', 'UA-44862408-1', 'daelimmuseum.org');
+  ga('create', 'UA-62929058-1', 'daelimmuseum.org');
+  ga('send', 'pageview');
+</script>
+
+
+	<!-- //footer -->
+</div>
+
+<!-- 150512 수정 -->
+<script type="text/javascript">
+	$(function () {
+		//포토갤러리용
+		$('.ui_gallery').exhibitionGallery();
+
+		//인디게이터 이벤트 처리
+		$(document.body).fixedModule({type: 'indicator_target'});
+		$('.ui_horizon_bar').fixedModule({type: 'horizone_scroll'});		//150512 수정
+
+		//동영상 플레이어 컨트롤
+		$('.ui_play_able').youtubePlayer();
+	});
+</script>
+<!-- //150512 수정 -->
+
+
+
+
+</body></html>
