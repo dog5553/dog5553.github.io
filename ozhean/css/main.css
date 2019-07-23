@@ -1,0 +1,84 @@
+
+header ul{padding-top: 20px;}
+header li a{font-size: 1.2em;font-weight: bold;}
+.logobox{width: 200px;height: 50px;display: block;margin: 0 auto;}
+header ul.logobox li{width: 100%;height: 100%;margin: 0;}
+header ul.logobox img{width: 100%;height: 100%;}
+/* nextlogo */
+header ul.nextlogo{width: 25%;float: right;margin-top: 20PX;}
+header ul.nextlogo li{float: left;width: 25%;}
+/* loginbox */
+header ul.loginbox{width: 25%;float: left;margin-top: 20PX;}
+header ul.loginbox li{float: left;width: 25%;}
+
+/* 메뉴상단 */
+.gnb{width: 75%;height: 38px;font-size: 1em;clear: both;margin: 0 auto;
+    position: relative;margin-top: 20px;}
+.gnbbox{width: 100%;height: 100%;}
+.gnbbox .gnbli{float: left;display: block;width: 11.111111%;height: 40px;text-align: center;
+            border-bottom: 2px solid orange;}
+.gnbbox .gnbli a{font-weight: 700;display: block;margin-top: 11px;}
+.subbox{position: absolute;top: 42px;width:11.11111%;z-index: 10;height: auto;}
+.subbox li{width: 100%;line-height: 40px;display: block;clear: both;}
+.subbox li a{width: 100%;height: 100%;display: block;margin: 0;}
+.subbox{display: none;}
+.gnbbox .gnbli:hover{color: darkred;}
+.gnbbox .gnbli:hover .subbox{display: block;background:rgba(0, 0, 0, 0.6);color: #fff;}
+.subbox li:hover{border-bottom: red 1px solid ;}
+
+main{width: 100%;height: 723px;overflow: hidden;}
+.slbox{width: 100%;height: 100%;}
+.slbox li{width: 100%; height: 100%;}
+.slbox li img{width: 100%;height: 100%;}
+
+/* page2 */
+#page2{clear: both;width: 90%;margin: 0 auto;}
+.content{width: 100%;}
+.content ul.conbox{width: 100%;}
+.content li{float: left;width: 25%;}
+.content li img{width: 98%;}
+
+/* page3 */
+#page3{clear: both;width: 100%;height: 626px; margin: 0 auto;
+    background-image: url(../img/main10.jpg);
+    background-position: center center;
+   }
+.pe3wrap{width: 80%;margin-left: 15%;margin: 0 auto;}
+.pe3wrap ul{
+    width: 100%;
+    float: left; 
+    height: 400px;
+    margin-top: 5%;
+    padding-top: 30px;
+    padding-bottom: 50px;}
+.pe3wrap ul li{
+    font-size: 1.1em;
+    line-height: 60px;
+    }
+ul.ntbox1{width: 35%;float: left;}
+ul.ntbox1 li{background: darkorange;color: #333;
+    width: 80%;margin: 0 auto;margin-bottom: 2%;text-indent: 10px;}
+ul.ntbox2{width: 35%;float: right;}
+ul.ntbox2 li{background:rgba(255,255,255,0.8);color: #333;
+    width: 80%;margin: 0 auto;margin-bottom: 2%;text-indent: 10px;}
+.ntbox{font-size: 2em;text-align: center;margin-bottom: 30px;}
+.logodp{width: 100px;height: 100px;margin-left: 30px;float: left;}
+
+#page4{width: 100%;background-image: url(../img/bg.jpg);}
+.p4wrap{clear: both; width: 80%;min-height: 40vh;display: block;margin: 0 auto;padding-top: 3%;padding-bottom: 5%;}
+/* quick */
+.quick{width: 33%;height: 380px; float: left;text-align: center;}
+.qicbox{height: 380px; width: 330px;display: block;margin: 0 auto;}
+.qicbox li{width: 50%;float: left;text-align: center;padding-top: 20px;}
+/* popup */
+.popup{overflow: hidden;;float: left;width: 33.33333%;height: 380px;text-align: center;}
+.popbox{width:100%;}
+.popbox li{width: 100%;float: left;}
+.popbox li img{overflow: hidden;height: 330px;}
+
+/* notice */
+.notice{width: 33.33333%;height: 100%;float: left;text-align: center;}
+.notice li{width: 33%;float: left;padding-top: 15%;}
+.notice li img{width: 80%;}
+.notit, .poptit, .qtit{font-size: 1.8em; padding-bottom: 20px;}
+.quick, .popup{border-right:2px solid darkorange;}
