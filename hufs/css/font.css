@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* 폰트 정의 */
+@font-face {
+  font-family: 'theboldfont';
+  font-style: normal;
+  font-weight: 300;
+  src: url(./fonts/theboldfont.eot) format('eot'),
+       url(./fonts/theboldfont.woff) format('woff'),
+       url(./fonts/theboldfont.ttf) format('truetype');
+}
+

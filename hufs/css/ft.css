@@ -1,0 +1,7 @@
+@charset "uft-8";
+/* footer */
+.ft{width: 100%;height: 100%;}
+.ft ul,li{list-style: none;}
+.fnb{width: 100%;height: 100%;background-color:darkblue;padding: 5px;}
+.fnb .menu{height: 100%;width: 100%;}
+.ftad, .copyright{ text-align: center; margin: 5px; font-size: 0.2em; color: #fff;height: 80%;}

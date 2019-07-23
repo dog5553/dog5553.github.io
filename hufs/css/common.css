@@ -1,0 +1,12 @@
+@charset "uft-8";
+*{margin: 0;padding: 0;}
+body,html{width: 100%; 
+  -ms-overflow-style: none;}
+::-webkit-scrollbar{display: none;}
+ul{list-style: none;}
+a{text-decoration: none;color: inherit;}
+label, button,input{background-image: none; background-color: transparent;border: 0; outline: 0;}
+
+table{display: table;}
+tr{display: table-row;}
+th,td{display: table-cell;}
