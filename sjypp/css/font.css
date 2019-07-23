@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* 폰트 정의 */
+@font-face {
+  font-family: 'SangSangBodyM';
+  font-style: normal;
+  font-weight: 300;
+  src: url(./font/SangSangBodyM.eot#iefix), format('eot'),
+       url(./font/SangSangBodyM.woff) format('woff'),
+       url(./font/SangSangBodyM.ttf) format('truetype');
+}
+

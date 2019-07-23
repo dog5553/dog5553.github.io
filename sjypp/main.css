@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+        .vs1{position: relative; overflow-x: hidden; width: 100%;height: 100vh;clear: both; clear: both;}
+        .slide1{width: 300%;}
+        .slide1 li{float: left; width:33.33333%; height: 100vh; list-style: none;display: block;}
+        .vsimg img{display: block;max-width: 100%; height: auto;float: left;}
+        .sltit{ z-index: 50; position: absolute;left: 50px;top:calc(100% - 50%);color: #fff; font-size: 3rem;opacity: 0.7;}
+        .tit_box button{z-index: 50;position: absolute;left: 50px;top:calc(100% - 40%);color: #fff;
+                        background: #000; border-radius: 10px;height: 30px; width: 155px;cursor: pointer;}
+        .slbtnbox li{float: left;}
+        .tit_box{width: 100%;}
+        .slbtnbox{clear: both;position: fixed; right:0;top:calc(40% - 30px);
+            height: 120px;z-index: 101;}
+        .slbtnbox li{ clear: both; float: left;display: block; margin-top:14px; position: relative; width:150px; height: 32px;  }
+        .slbtnbox li button{ text-align:left; text-indent:10px; letter-spacing:4px;
+            width:160px;height: auto;font-size: 1rem;display: block;color: #fff; 
+            position:absolute;  top:0;   border-bottom: 1px solid #ccc; 
+            background:transparent; line-height:32px; height:32px;  right: -130px;  }
+        .slbtnbox li button::first-letter { font-size:1rem; letter-spacing:10px; }
+        .slbtnbox li.on button.about{color: #000;width: 100px;}
+        .slbtnbox li.on button { background:transparent; right: 0;} 
+        .slbtnbox li.on button::first-letter{letter-spacing: 4px;}
+            /* 메뉴 토글 버튼 */
+    
+
+     /* slbtnbox2 */
+        .slbtnbox2{display: none;}
+     /* press */
+        .vs2{clear: both;width: 100%;height: 100vh;position: relative;background: #000;}
+        .vstit{height: 100vh;position: absolute;left: 5%;z-index: 74;width: 50px;}
+        .tit_box2{display: block;position: absolute;top:calc(70% - 540px);}
+        .sltit2{color: #fff; font-size: 3rem;opacity: 0.7;margin-top: 40%;line-height: 50px;padding-bottom: 10%;}
+        .slcom1{color: #ccc;padding-bottom: 20px;margin-bottom: 7%;display: block;}
+        .slcom2{color: #fff;border-bottom: 2px solid #ccc;padding-bottom: 10px;}
+        .vsbox{position: absolute;width: 100%;height: 100vh;z-index: 75;}
+        .press{width: 90%; height:90%;float: right; touch-action: cross-slide-x; margin: 0 auto; 
+        display: block;clear: both;margin: 0 auto;}
+        .press li{width: 20%;height: 55%;display: block;margin: 0 auto;padding-top: 5%;float: left;}
+        .press img{width: 18%;height: 55%;display: block;}
+        .vimg1{position: absolute; left: 28.88888%;z-index: 76; top: 20%;}
+        .vimg2{position: absolute; left: 44.44444%;z-index: 77;top: 10%;}
+        .vimg4{position: absolute; left: 60.000000%;z-index: 78; top: 25%;}
+        .press .vimg4{ width: 18%;height: 55%;display: block;}
+
+
+        .press1{width: 90%; height:90%;float: right; touch-action: cross-slide-x; margin: 0 auto; 
+            display: block;clear: both;margin: 0 auto;}
+        .press1 li{width: 20%;height: 55%;display: block;margin: 0 auto;padding-top: 5%;float: left;}
+        .press1 img{width: 18%;height: 55%;display: block;}
+        .press1 .vimg4{ width: 18%;height: 55%;display: block;}
+
+        .press2{width: 90%; height:90%;float: right; touch-action: cross-slide-x; margin: 0 auto; 
+            display: block;clear: both;margin: 0 auto;}
+        .press2 li{width: 20%;height: 55%;display: block;margin: 0 auto;padding-top: 5%;float: left;}
+        .press2 img{width: 18%;height: 55%;display: block;}
+        .press2 .vimg4{ width: 18%;height: 55%;display: block;}
+
+
+
+/* press 년도별 */
+        .pressmenu{position: absolute; bottom: 0; z-index: 79;width: 100%;left:calc(50% - 375px);
+            padding-bottom: 3%;}
+        .pressmenu li{float: left;width: 150px;display: block;line-height: 30px; 
+            text-align: center;border: 2px solid palevioletred; margin-left: 10px;border-radius: 20px;}
+        .pressmenu li a{color: #fff;padding-bottom: 20px;color: pink; padding-bottom: 10%;
+           }
+        
+     /* vs3*/
+        .vs3{background-image: url(./img/bg.jpg); background-repeat: no-repeat; 
+        width: 100%;clear: both;position: relative;height: 100vh;overflow: hidden;}
+        .magazine{width: 100%;margin: 0 auto;height: 960px;}
+        .vsimg3{height: 474px;background: #fff;position: absolute;z-index: 80;
+            top: 243px;right:calc(50% - 300px);display: block;width: 700px;}
+        .vimg3{width: 130%; height: 130%;border: 10px solid silver;}     
+        .tit_box3{width: 300px;float: left;display: block;margin-left: 10%;margin-top: 15%;}
+        .sltit3{color: #fff; font-size: 3rem;opacity: 0.7;margin-top: 40%;line-height: 50px;padding-bottom: 10%;}
+        .tit_box3 span{color: #fff;border: 2px solid #ccc;padding-bottom: 10px;}
+     
+     
+     /* video */
+        .video{ clear: both; width: 100%;height: 100%;clear: both;margin: 0 auto;display: block;}
+        .vdospan{font-size: 0.8;}
+        .vtit{color: darkorchid; font-size: 2.5rem;text-decoration:none;text-align: center;line-height: 50px;}
+        .vdoitem{width: 100%;height: 100%;display: block;margin: 0 auto;}
+        .vdoitem iframe{width: 100%; height: 100%;display: block;}
+        /* 퀵메뉴 */
+        .quick{width: 100%;clear: both;height: 100vh;display: block;position: relative;}
+        .qbox{width: 100%;background-color:#000;}
+        .qbox li{width: 33.33333%;float: left;display: block;
+            height: 960px;background-repeat: no-repeat;
+            background-position: center center;box-sizing: content-box;
+            }
+        .qbox a{font-weight: bold;font-size: 1.5rem;
+            text-align: center;color: #fff;
+            position: absolute;top: 20%;
+            width: 200px;height: auto;background: #000;line-height: 50px;}
+        .q1{left: 11.11111%;}
+        .q2{left: 44.44444%;}
+        .q3{left: 77.77777%;}
+        .qmenu1{background-image: url(./subimg/s33_files/q9.png);  }
+        .qmenu2{background-image: url(./subimg/s33_files/q7.png); 
+                text-align: center;width: 60px;}
+        .qmenu3{background-image: url(./subimg/s33_files/q8.png);text-align: center;}
+
+    

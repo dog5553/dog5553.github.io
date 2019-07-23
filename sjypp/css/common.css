@@ -1,0 +1,39 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+body,html{width: 100%; -ms-overflow-style: none; font-family:'SangSangBodyM', sans-serif;
+overflow-x:hidden; }
+ ::-webkit-scrollbar{display: none;}
+ul{list-style: none;}
+a{text-decoration: none;color: inherit;}
+label, button,input{background-image: none; background-color: transparent;border: 0; outline: 0;}
+img{background:none;}
+.wrap{width: 100%; height: 100%; overflow-x:auto; }
+/* header */
+.hd{width: 100%;height: 80px;position: fixed; top: 0;left: 0;z-index: 150;}
+.hd ul{width: auto;height: auto;}
+.hd li{color: #fff;}
+.hd li.hd1{width: 100px;height: 80px;}
+.hd li.hd1 a{width: 65px; height: 35px; display: block; position: absolute; top: 20px;left: 20px;}
+.hd li.hd1 img{width: 65px; height: 35px;}
+.hd li.hd2{clear: both; width: 100%;height: 100%;display: block;}
+.lngbtn{position: absolute;right: 70px;top: 20px;width: 80px;line-height: 33px;border: 2px solid white;color: #fff;}
+
+.stick{ cursor: pointer; display: block;width: 40px;height: 42px;box-sizing: border-box;
+    position: fixed;right: 0.5rem;z-index: 51;transition: 0.3s;transform: rotate(0deg);
+    top: 15px; }
+.stick ul{display: block; height:42px; transform: rotate(0deg); position:relative; }
+.stick ul li { transition: 0.4s; position: absolute; height:3px; background:#fff; }
+.stick #up {width: 20px; top:15px; }
+.stick #down {width: 30px; top:28px; }
+.stick:hover #up {width: 30px; }
+.stick:hover #down {width: 20px;}
+.stick.on #up{width: 30px;transform: rotate(45deg);top: 23px;}
+.stick.on #down{width: 30px;transform: rotate(-45deg);top: 23px;}
+
+/* .hd li.hd3 img{width: 30px;height: 20px;} */
+/* 메뉴 토글 버튼 */
+.hdtoggle{clear: both;position: fixed;width: 10%; right: -100%; opacity: 0.6;
+ top: 15%;z-index: 200;}
+ .hdtg{width: 100%;display: block;}
+ .hdmenu{line-height: 35px;display: block;font-weight: bold;  font-size: 1rem; color: #fff;}
+ .hdmenu:hover { background-color: #fff; color:darkred;font-weight: bold;cursor: pointer;}
