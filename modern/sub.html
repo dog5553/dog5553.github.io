@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>국립현대박물관</title>
+</head>
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/desktop1.css">
+<body>
+<style>
+.hd{background-image: url("./img/hdvg.jpg");height: 320px;background-repeat: no-repeat;background-size: cover;background-color:rgba(0, 0, 0, 0.5);}
+.hdwrap{width: 100%;}
+.gnb li a, .others li a  {color: black;}   
+.gnb ul.bg{width: 100%;height: 200px;}
+.gnb ul.bg h3{font-size: 2em;color: white;}
+
+        /* 소장품 배경 */
+.bg{width: 100%; height: 200px;}
+.bg .bgtit{font-size: 3em;color: white;}
+
+aside{width:100%;height: 60px;background:rgba(0,0,0,0.8);clear: both; }
+aside ul{width: 60%; height: 60px;margin: 0 auto;}
+aside h3{width: 150px;display: block;font-size: 2em;padding-bottom: 50px;} 
+aside li{width: 20%;float: left;text-align: center;padding-top: 15px;}
+aside li a{font-size: 1.2em;line-height: 35px;color: #fff;}
+aside li:first-child ::before{content: ">";padding-right: 10px;padding-bottom: 5px;;}
+/* page2 */
+main.page1{width: 100%;height: 100%;clear: both;margin-top: 30px;}
+
+/* select */
+div.click {width: auto;clear: both;}
+ul.formbox{margin: 100px 320px;display: block;}
+ul.formbox li{float: left;}
+ul.formbox select{width: auto;border: 3px solid #666;height: 50px;display: block;}
+form.search{ border: 3px solid #666;width: 600px;height: 44px;
+             margin: 0px 0px; 
+             text-indent: 30px; }
+form input{font-size: 1em;font-weight: bold; color: black; width: 300px;}
+.submit{padding-left: 150px; background-repeat: no-repeat; width: 30px; height: 30px; 
+        background-image: url("./ico/bksearch.png");background-size: contain;
+        background-position: center center;}
+.p1tit{font-weight: bold;color: #ccc;font-size: 2em;border-top: 2px solid #000;text-align: center;width: 200px;
+        padding-top: 10px;display: block;margin: 100px auto 100px auto; }
+
+        
+.pic{width:100%;height: 100%;padding-top: 100px;}
+.picbox{width: 90%;margin: 0 auto;display: block;}
+.picbox li{width: 22%;float: left;padding-left: 30px;height: 557px;padding-bottom: 20px; background: #fff;}
+.picbox li:nth-child(4+n){padding-left: 0px;}
+.picbox li a{width: 100%;}
+.picbox a img{ width: 100%;}
+
+
+
+</style>
+        <header class="hd">
+                <div class="hdwrap">
+               <a href="index.html" class="logo"></a>
+                <ul class="tgbox">
+                    <li class="tgbar1"></li>
+                    <li class="tgbar2"></li>
+                </ul>
+                <ul class="search">
+                        <li class="scico"><img src="./ico/search.png" alt="돋보기"></li>  
+                </ul>
+                <ul class="others desk">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">공지</a></li> 
+                    <li class="lng">
+                        <a href="">KOR</a>
+                            <ul class="lang">
+                                <li><a href="">한국어</a></li>
+                                <li><a href="">English</a></li>
+                                <li><a href="">中国語</a></li>
+                                <li><a href="">日本語</a></li>
+                            </ul>
+                        </li>           
+                </ul>
+                <nav class="gnb desk on">
+                        <ul>
+                            <li><a href="">관람</a>
+                                <ul class="subbox">
+                                    <li class="submenu"><a href="">과천</a></li>
+                                    <li class="submenu"><a href="">서울</a></li>
+                                    <li class="submenu"><a href="">덕수궁</a></li>
+                                    <li class="submenu"><a href="">청주</a></li>
+                                    <li class="submenu"><a href="">캘린더</a></li>
+                                    <li class="submenu"><a href="">전시해설</a></li>
+                                    <li class="submenu"><a href="">단체관람</a></li>
+                                    <li class="submenu"><a href="">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">프로그램</a>
+                                <ul class="subbox">
+                                        <li class="submenu"><a href="">전시</a></li>
+                                        <li class="submenu"><a href="">필름앤비디오</a></li>
+                                        <li class="submenu"><a href="">다원예술</a></li>
+                                        <li class="submenu"><a href="">이벤트</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">교육</a>
+                                <ul class="subbox">
+                                        <li class="submenu"><a href="">미술관교육소개</a></li>
+                                        <li class="submenu"><a href="">어린이미술관</a></li>
+                                        <li class="submenu"><a href="">참여신청</a></li>
+                                        <li class="submenu"><a href="">교육자료실</a></li>
+                                        <li class="submenu"><a href="">교육사진</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">소장품</a>
+                                <ul class="subbox">
+                                        <li class="submenu"><a href="">고화질</a></li>
+                                        <li class="submenu"><a href="">소장품</a></li>
+                                </ul>
+                            </li>    
+                        </ul>
+                       
+                </nav>
+                <div class="bg">
+                    <ul>
+                            <h3 class="bgtit"> 소장품 </h3>
+                    </ul>
+                </div>
+                <aside class="exhibition">
+                        <ul>
+                            <li><a href="">고화질</a> </li>
+                            <li><a href="#">부문</a></li>
+                            <li><a href="">제작연도</a></li>
+                            <li> <a href="">수집연도</a> </li>
+                            <li> <a href="">정렬</a> </li> 
+     
+                        </ul>
+                </aside>
+                </div>
+                
+            </header>
+             
+<main class="page1">  
+    <div class="mainwrap">
+        <div class="click">
+                <h3 class="p1tit">최근소장품</h3> 
+        <ul class="formbox">
+            <li>
+           <select name="" id="sel">               
+                    <option value="">소장품명</option>
+                    <option value="">작품명</option>
+                    <option value="">작가명</option>
+                    <option value="">연도</option>
+                </select>
+            </li>       
+             <li> <form action="" id="frm1" name="frm1" class="search">
+                <input type="text" value="작품명, 작가명을 입력하세요" class="enter">
+                <input type="submit" value="" class="submit" >
+            </form>
+            </li>
+        </ul>
+    </div>
+            <div class="pic">
+                <ul class="picbox">
+                        <li class="dp">
+                            <a href="#" class="pics">
+                            <img src="./img/sub21.jpg" alt="">
+                            <h5>장운상<br>CHANG Unsang </h5>                                
+                            <p>아雅<br>1968 </p>
+                            </a>
+                        </li>
+                    
+                        <li class="dp">
+                            <a href="#" class="pics">
+                            <img src="./img/sub2.jpg" alt="">
+                            <h5>장운상<br>CHANG Unsang </h5>                                
+                            <p>한 閑 <br>1973</p>
+                        </a>
+                        </li>
+                        <li class="dp">
+                                <a href="#" class="pics">
+                            <img src="./img/sb22.jpg" alt="">
+                            <h5>정찬영 <br> JUNG Chanyoung </h5>                                
+                            <p>공작 <br>1937 </p>
+                        </a>
+                        </li>
+            
+                        <li class="dp">
+                            <a href="#" class="pics">
+                                <img src="./img/sub23.jpg" alt="">
+                                <h5>정찬영 <br> JUNG Chanyoung </h5>                                
+                                <p> <span>금계유중 金鷄遊中</span>  <br>1933 </p>
+                            </a>
+                        </li>
+                        <li class="dp">
+                                <a href="#" class="pics">        
+                            <img src="./img/sub24.jpg" alt="">
+                            <h5>정재호 <br> JUNG Jaeho</h5>                                
+                            <p> <span>난장이의 공</span>  <br> 2018</p>
+                        </a>
+                        </li>
+                    
+                        <li class="dp">
+                            <a href="#" class="pics">
+                            <img src="./img/sub6.jpg" alt="">
+                            <h5>정찬영 <br> JUNG Chanyoung </h5>                                
+                            <p> <span>공작 초본</span> 1937년 이전 추정   </p>
+                        </a>
+                        </li>
+                        <li class="dp">                    
+                            <a href="#" class="pics">
+                            <img src="./img/sub7.jpg" alt="">
+                            <h5>정찬영 <br> JUNG Chanyoung </h5>                                
+                            <p> <span>낙화유금 초본</span>
+                            <br>1933년 이전 추정</p>
+                        </a>
+                        </li>
+                        <li class="dp">
+                            <a href="#" class="pics">
+                            <img src="./img/sub8.jpg" alt="">
+                            <h5>정찬영 <br> JUNG Chanyoung </h5>                                                               
+                            <p> <span>설중백로 초본</span> <br> 1930년 이전 추정 </p>
+                        </li>
+                        <li class="dp">
+                                <a href="#" class="pics">
+                            <img src="./img/sub9.jpg" alt="">
+                            <h5>정찬영 <br> JUNG Chanyoung </h5>                                                               
+                            <p>  <span>수련 초본</span> <br>  1929년 이전 추정</p>
+                        </li>
+                        <li class="dp">
+                                <a href="#" class="pics">                           
+                            <img src="./img/sub10.jpg" alt="">
+                            <h5>정찬영 <br> JUNG Chanyoung </h5>                                                               
+                            <p> 여광 초본 <br> 1931년 이전 추정 </p>
+                                </a>
+                             </li>
+                        <li class="dp">
+                                <a href="#" class="pics">
+                            <img src="./img/sub11.jpg" alt="">
+                            <h5>정찬영 <br> JUNG Chanyoung </h5>                                                               
+                            <p> <span>한국산유독식물</span> 1933</p>
+                            </a>
+                        </li>
+                </ul>
+            
+            </div>
+        </div> 
+    </div>
+</main>  
+</body>
+</html>

@@ -1,0 +1,11 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+body, html{width: 100%; -ms-overflow-style: none;font-size: 14px;}
+/* ::-webkit-scrollbar{display:none;} */
+ul, li{list-style: none;}
+a{color: inherit; text-decoration: none;}
+button, input, label{background:transparent; border: none; outline: 0;}
+img{border: none;}
+
+ .pg1wrap, .pgwrap, .pg2wrap{width:92%;margin: 0 auto;}
+
